@@ -1,0 +1,19 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:diamond_sword"
+      },
+      "title": "Blood Madness",
+      "description": "Kill 60 Humans.",
+      "hidden": false
+    },
+    "parent": "vampire_pack:levelups/level3",
+    "criteria": {
+      "impossible": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "rewards": {
+      "function": "vampire_pack:levels/level4_active"
+    }
+  }

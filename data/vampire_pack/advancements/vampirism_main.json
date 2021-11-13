@@ -1,0 +1,17 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:wither_skeleton_skull"
+      },
+      "title": "Vampirism",
+      "description": "Thanks for downloading!",
+      "background": "minecraft:textures/block/nether_bricks.png",
+      "show_toast": false,
+      "announce_to_chat": false
+    },
+    "criteria": {
+      "main": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

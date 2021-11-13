@@ -1,0 +1,12 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "equipment": {
+        "mainhand": {
+          "item": "minecraft:blaze_rod",
+          "nbt": "{HellWand:1b}"
+        }
+      }
+    }
+  }

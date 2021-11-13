@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:respawn_anchor"
+    },
+    "title": "Final Sacrifice",
+    "description": "Upgrade the temple to stage 4.",
+    "frame": "challenge",
+    "hidden": false
+  },
+  "parent": "vampire_pack:temple/infernal_demands",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

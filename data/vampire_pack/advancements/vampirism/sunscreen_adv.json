@@ -1,0 +1,17 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:fire_resistance\"}"
+      },
+      "title": "Sunscreen Is Important",
+      "description": "Apply some fire resistance lotion to avoid getting sun burns.",
+      "hidden": false
+    },
+    "parent": "vampire_pack:vampirism/sun_exposed_adv",
+    "criteria": {
+      "impossible": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

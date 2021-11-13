@@ -1,0 +1,25 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:potion",
+        "nbt": "{CustomPotionColor:10616812}"
+      },
+      "title": "Holy Juice",
+      "description": "A water bottle, a golden apple, a ghast tear and 12 glowstone dusts... Brilliant!",
+      "hidden": false
+    },
+    "parent": "vampire_pack:altar/altar_adv",
+    "criteria": {
+      "bottley": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "item": "minecraft:potion",
+              "nbt": "{SanctumWater:1b}"
+            }
+          ]
+        }
+      }
+    }
+  }

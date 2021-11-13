@@ -1,0 +1,20 @@
+{
+    "criteria": {
+      "drink": {
+        "trigger": "minecraft:consume_item",
+        "conditions": {
+          "player": {
+            "type": "minecraft:player",
+            "nbt": "{Tags:[Vampire]}"
+          },
+          "item": {
+            "item": "minecraft:potion",
+            "nbt": "{SanctumWater:1b}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "vampire_pack:altar/vampire_sanctum_water"
+    }
+  }

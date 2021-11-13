@@ -1,0 +1,17 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:ender_eye"
+      },
+      "title": "I'm a Vampire!",
+      "description": "Become a vampire.",
+      "frame": "goal",
+      "hidden": false
+    },
+    "parent": "vampire_pack:temple/final_sacrifice",
+    "criteria": {
+      "impossible": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

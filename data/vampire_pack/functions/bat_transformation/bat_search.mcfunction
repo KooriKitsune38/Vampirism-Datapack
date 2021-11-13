@@ -1,0 +1,2 @@
+scoreboard players operation !IdWanted vampirismvalues = @s vampiresUUIDs
+execute as @e[tag=TransformationBat] if score !IdWanted vampirismvalues = @s vampiresUUIDs positioned ~ ~.78 ~ run tp @s ^ ^ ^.2 ~ ~

@@ -1,0 +1,16 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:brewing_stand"
+      },
+      "title": "Juice Extractor",
+      "description": "Step on a brewing stand with the wand.",
+      "hidden": false
+    },
+    "parent": "vampire_pack:vampirism/vampire_adv",
+    "criteria": {
+      "impossible": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

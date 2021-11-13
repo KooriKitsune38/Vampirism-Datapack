@@ -1,0 +1,13 @@
+{
+    "condition": "alternative",
+    "terms": [
+        {
+            "condition": "reference",
+            "name": "vampire_pack:world/is_dark1"
+        },
+        {
+            "condition": "reference",
+            "name": "vampire_pack:world/is_nighttime"
+        }
+    ]
+}

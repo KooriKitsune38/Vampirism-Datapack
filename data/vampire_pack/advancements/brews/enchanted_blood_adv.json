@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+          "item": "minecraft:potion",
+          "nbt": "{CustomPotionColor:13378339,Enchantments:[{}]}"
+        },
+        "title": "Fancy Thirst",
+        "description": "Brew some blood with magical sources.",
+        "frame": "challenge",
+        "hidden": false
+      },
+      "parent": "vampire_pack:brews/blood_adv",
+      "criteria": {
+        "inventory": {
+          "trigger": "minecraft:inventory_changed",
+          "conditions": {
+            "items": [
+              {
+                "item": "minecraft:potion",
+                "nbt": "{EnchantedBloodBottle:1b}"
+              }
+            ]
+          }
+        }
+      }
+    }

@@ -1,0 +1,19 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:golden_sword"
+      },
+      "title": "Dark Arisen",
+      "description": "Kill 25 Humans.",
+      "hidden": false
+    },
+    "parent": "vampire_pack:levelups/level2",
+    "criteria": {
+      "impossible": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "rewards": {
+      "function": "vampire_pack:levels/level3_active"
+    }
+  }

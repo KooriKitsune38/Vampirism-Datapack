@@ -1,0 +1,16 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:netherite_boots"
+      },
+      "title": "It's Not Feather Falling!",
+      "description": "Fall without taking damage.",
+      "hidden": false
+    },
+    "parent": "vampire_pack:vampirism/vampire_adv",
+    "criteria": {
+      "impossible": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

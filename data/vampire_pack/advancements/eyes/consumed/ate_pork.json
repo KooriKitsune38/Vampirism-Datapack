@@ -1,0 +1,19 @@
+{
+    "criteria": {
+      "ate_human_eyes": {
+        "trigger": "minecraft:consume_item",
+        "conditions": {
+          "player": {
+            "type": "minecraft:player",
+            "nbt": "{Tags:[Vampire]}"
+          },
+          "item": {
+            "item": "minecraft:porkchop"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "vampire_pack:vampirism/pork_beef_blood"
+    }
+  }

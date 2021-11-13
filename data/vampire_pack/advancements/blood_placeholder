@@ -1,0 +1,8 @@
+"display": {
+    "icon": {
+      "item": "minecraft:potion",
+      "nbt": "{Item:{id:\"minecraft:potion\",tag:{CustomPotionColor:13378339}"
+    },
+    "title": "Blood Thirst",
+    "description": "Drink some red human juice."
+  },

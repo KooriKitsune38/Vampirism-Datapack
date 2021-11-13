@@ -1,0 +1,39 @@
+{
+  "surface_builder": "minecraft:crimson_forest",
+  "depth": 0.125,
+  "scale": 0.05,
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "precipitation": "none",
+  "temperature_modifier": "none",
+  "category": "desert",
+  "effects": {
+    "sky_color": 852231,
+    "fog_color": 851969,
+    "water_color": 3801091,
+    "water_fog_color": 852231,
+    "grass_color": 6032404,
+    "foliage_color": 6032404,
+    "grass_color_modifier": "swamp",
+    "particle": {
+      "options": {
+        "type": "white_ash"
+      },
+      "probability": 0.05
+    }
+  },
+  "starts": [],
+  "spawners": {
+    "creature": [
+      {
+        "type": "minecraft:vex",
+        "weight": 1000,
+        "minCount": 15,
+        "maxCount": 30
+      }
+    ]
+  },
+  "spawn_costs": {},
+  "carvers": {},
+  "features": []
+}
