@@ -2,6 +2,6 @@ tellraw @s [{"text":"Only at ","color":"dark_red"},{"text":"night","color":"gold
 
 particle minecraft:lava ~ ~0.1 ~ 0.3 0.2 0.3 0 15 normal
 
-playsound minecraft:entity.bat.hurt master @s ~ ~ ~ 0.1 2
+playsound minecraft:entity.enderman.hurt master @s ~ ~ ~ 0.1 2
 
 scoreboard players set @s daytimeerror 1

@@ -1,10 +1,8 @@
 # Scoreboards
-scoreboard objectives remove cryobsinv
-scoreboard objectives remove vampirismvalues
+scoreboard objectives remove v.Values
 scoreboard objectives remove tradertimer
 scoreboard objectives remove spoopytimer
 scoreboard objectives remove templesoundtimer
-scoreboard objectives remove altarsoundtimer
 scoreboard objectives remove burnsoundtimer
 scoreboard objectives remove vampirismtimer
 scoreboard objectives remove brewingtimer
@@ -21,7 +19,6 @@ scoreboard objectives remove bloodlevel
 scoreboard objectives remove vampfalldist
 scoreboard objectives remove ritualhealth
 scoreboard objectives remove vampiresUUIDs
-scoreboard objectives remove vampbatisthere
 scoreboard objectives remove vampflyingspeed
 scoreboard objectives remove EnableBat
 #scoreboard objectives remove daytimeerror

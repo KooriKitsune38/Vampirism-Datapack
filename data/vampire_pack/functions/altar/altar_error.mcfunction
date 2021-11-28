@@ -2,6 +2,6 @@ tellraw @a[distance=..4] [{"text":"The ","color":"dark_red"},{"text":"light","co
 
 particle minecraft:dust 1.1 1.1 1.1 1 ~ ~0.3 ~ 0.2 0.2 0.2 0.1 10 normal
 
-playsound minecraft:entity.bat.hurt master @a ~ ~ ~ 0.1 2
+playsound minecraft:entity.enderman.hurt master @a ~ ~ ~ 0.1 2
 
 tag @s add AltarErrorDisplayed

@@ -1,10 +1,8 @@
 # Scoreboards
-scoreboard objectives add cryobsinv dummy
-scoreboard objectives add vampirismvalues dummy
+scoreboard objectives add v.Values dummy
 scoreboard objectives add tradertimer dummy
 scoreboard objectives add spoopytimer dummy
 scoreboard objectives add templesoundtimer dummy
-scoreboard objectives add altarsoundtimer dummy
 scoreboard objectives add burnsoundtimer dummy
 scoreboard objectives add vampirismtimer dummy
 scoreboard objectives add brewingtimer dummy
@@ -21,7 +19,6 @@ scoreboard objectives add bloodlevel dummy
 scoreboard objectives add vampfalldist dummy
 scoreboard objectives add ritualhealth dummy
 scoreboard objectives add vampiresUUIDs dummy
-scoreboard objectives add vampbatisthere dummy
 scoreboard objectives add vampflyingspeed minecraft.custom:minecraft.fly_one_cm
 scoreboard objectives add EnableBat trigger
 #scoreboard objectives add daytimeerror dummy
@@ -46,13 +43,16 @@ scoreboard objectives add EnableBat trigger
 #scoreboard objectives add treebltimer dummy
 
 # Default Values
-#scoreboard players set cryobsdefvalue vampirismvalues 4
-scoreboard players set !minbrewingitem vampirismvalues 1
-scoreboard players set !bloodbrewfuel vampirismvalues 7
+#scoreboard players set cryobsdefvalue v.Values 4
+scoreboard players set !minbrewingitem v.Values 1
+scoreboard players set !bloodbrewfuel v.Values 7
 scoreboard players set !double qwuthalnumge 2
 
 scoreboard players set #MinuteInSeconds qwuthalcalculate 60
 scoreboard players set #SecondInTick qwuthalcalculate 20
+
+# Schedules
+function vampire_pack:schedules/a.sounds
 
 ## Tell it's loaded ##
 tellraw @a [{"text":"[Vampirism Pack] ","color":"dark_red","bold": true},{"text": "Reloaded!","color": "red","italic": true,"bold": false}]

@@ -1,0 +1,16 @@
+{
+    "condition": "minecraft:alternative",
+    "terms": [
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{Tags:[TransformationBat]}"
+            }
+        },
+        {
+            "condition": "minecraft:reference",
+            "name":"vampire_pack:player/tag_vampire"
+        }
+    ]
+}

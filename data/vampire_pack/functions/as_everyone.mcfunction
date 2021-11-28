@@ -1,7 +1,5 @@
 #> vampire_pack:as_everyone
 
-advancement grant @s only vampire_pack:vampirism_main
-
 # Timers
 ## Adds
 #> Vampirism Timer

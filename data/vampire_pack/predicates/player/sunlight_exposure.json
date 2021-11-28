@@ -10,7 +10,7 @@
         "condition": "inverted",
         "term": {
             "condition": "minecraft:reference",
-            "name": "vampire_pack:player/level15_light_exeptions"
+            "name": "vampire_pack:player/level15_light_exceptions"
         }
     },
     {

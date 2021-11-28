@@ -9,11 +9,10 @@ execute as @e[type=villager,tag=Anchor] at @s run function vampire_pack:as_ancho
 execute as @e[type=area_effect_cloud] at @s run function vampire_pack:as_aec
 
 #> Bat
-execute as @e[type=bat,tag=TransformationBat] at @s unless entity @a[distance=..1.2,predicate=vampire_pack:player/tag_vampire] run kill @s
+execute as @e[type=bat,tag=TransformationBat] at @s run function vampire_pack:bat_transformation/kill.bat
 
 #> Iron Golem attack nearby vampires/bats
-execute as @e[type=iron_golem] at @s run data modify entity @s AngryAt set from entity @a[tag=!BatTransformed,limit=1,sort=nearest,distance=..10] UUID
-execute as @e[type=iron_golem] at @s run data modify entity @s AngryAt set from entity @e[type=bat,tag=TransformationBat,limit=1,sort=nearest,distance=..10] UUID
+execute as @e[type=iron_golem] at @s run data modify entity @s AngryAt set from entity @e[type=#vampire_pack:angery.golem,limit=1,sort=nearest,distance=..10] UUID
 
 # Wand Crafting
 execute as @e[type=item,nbt={Item:{id:"minecraft:blaze_rod",Count:1b}}] at @s if entity @e[type=item,nbt={Item:{id:"minecraft:ender_eye",Count:1b}},distance=..1] run function vampire_pack:ritual/wand_craft

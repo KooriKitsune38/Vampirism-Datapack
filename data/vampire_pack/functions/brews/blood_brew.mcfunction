@@ -1,9 +1,9 @@
 ## Fuel ##
-scoreboard players operation @s brewingcurfuel -= !bloodbrewfuel vampirismvalues
+scoreboard players operation @s brewingcurfuel -= !bloodbrewfuel v.Values
 execute store result block ~ ~ ~ Fuel byte 1 run scoreboard players get @s brewingcurfuel
 
 ## Items ##
-execute store result score @s brewingitems run scoreboard players operation @s brewingcuritems -= !minbrewingitem vampirismvalues
+execute store result score @s brewingitems run scoreboard players operation @s brewingcuritems -= !minbrewingitem v.Values
 execute store result block ~ ~ ~ Items[{Slot:3b}].Count byte 1 run scoreboard players get @s brewingitems
 
 ## Bottles ##

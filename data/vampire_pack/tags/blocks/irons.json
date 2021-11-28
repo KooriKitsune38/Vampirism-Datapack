@@ -1,0 +1,21 @@
+{
+    "values": [
+        "rail",
+        "activator_rail",
+        "detector_rail",
+        "iron_ore",
+        "iron_block",
+        "iron_trapdoor",
+        "iron_bars",
+        "iron_door",
+        "heavy_weighted_pressure_plate",
+        "chain",
+        "cauldron",
+        "hopper",
+        "anvil",
+        "chipped_anvil",
+        "damaged_anvil",
+        "lantern",
+        "soul_lantern"
+    ]
+}

@@ -2,6 +2,6 @@ tellraw @s [{"text":"You don't have enough ","color":"dark_red"},{"text":"Crying
 
 particle minecraft:enchant ~ ~0.1 ~ 0.3 0.2 0.3 0 15 normal
 
-playsound minecraft:entity.bat.hurt master @s ~ ~ ~ 0.1 2
+playsound minecraft:entity.enderman.hurt master @s ~ ~ ~ 0.1 2
 
 tag @s add TempleErrorDisplayed

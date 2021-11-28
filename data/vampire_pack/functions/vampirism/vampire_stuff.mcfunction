@@ -1,6 +1,7 @@
 # Triggers
 #> Bat
 scoreboard players enable @s[scores={bloodlevel=80..}] EnableBat
+scoreboard players reset @s[scores={bloodlevel=..79}] EnableBat
 execute as @s[scores={EnableBat=1..},tag=!BatTransformable] run function vampire_pack:bat_transformation/bat_trigger_on
 execute as @s[scores={EnableBat=1..},tag=BatTransformable] run function vampire_pack:bat_transformation/bat_trigger_off
 
@@ -26,16 +27,14 @@ execute if entity @e[distance=..5,tag=Anchor,type=villager] run function vampire
 effect clear @s poison
 
 #> Fall Damage Removal
-execute store result score @s vampfalldist run data get entity @s FallDistance 10
-execute if score @s vampfalldist matches 30.. run function vampire_pack:vampirism/buffs/fall_damage
+execute unless data entity @s {FallDistance:0.0f} store result score .tempFallDist v.Values run data get entity @s FallDistance 10
+execute if score .tempFallDist v.Values matches 30.. run function vampire_pack:vampirism/buffs/fall_damage
 
 #> BL 80+ (Bat Transformation)
 execute if score @s bloodlevel matches 80.. if entity @s[tag=!TransformationCancelled,tag=BatTransformable] run function vampire_pack:vampirism/buffs/bl_80
-
 tag @s[nbt={OnGround:1b}] remove TransformationCancelled
-execute as @s[tag=BatTransformed] run function vampire_pack:bat_transformation/bat_stop_conditions
-
-scoreboard players reset @s vampflyingspeed
+#> BL 79-
+execute if entity @s[tag=BatTransformed,scores={bloodlevel=..79}] run function vampire_pack:bat_transformation/bat_stop
 
 ## Oveworld Buffs
 execute if predicate vampire_pack:world/in_overworld run function vampire_pack:vampirism/buffs/overworld_buffs
@@ -55,7 +54,7 @@ execute positioned ~ ~-.25 ~ if predicate vampire_pack:player/touching_iron run 
 execute if predicate vampire_pack:player/under_sunlight if predicate vampire_pack:world/in_overworld run effect give @s weakness 1 0 true
 
 #> If under_sunlight, has no fire resistance
-execute if predicate vampire_pack:player/sunlight_exposure run function vampire_pack:vampirism/sunlight/sun_exposed
+execute unless entity @s[tag=BatTransformed] if predicate vampire_pack:player/sunlight_exposure run function vampire_pack:vampirism/sunlight/sun_exposed
 
 #> Sunscreen & Helmet adv
 execute as @s[predicate=vampire_pack:player/wearing_helmet,predicate=!vampire_pack:player/level15_light_exeptions,predicate=vampire_pack:player/under_sunlight] if predicate vampire_pack:world/is_daytime run advancement grant @s only vampire_pack:vampirism/helmet_adv
@@ -74,3 +73,6 @@ execute if entity @s[predicate=vampire_pack:world/in_overworld,predicate=vampire
 
 #> Not Overworld
 execute as @s[predicate=!vampire_pack:world/in_overworld,predicate=vampire_pack:chance_30] run particle dust 0.541 0.000 0.000 1 ~ ~.5 ~ 0.3 0.6 0.3 0.05 1 force @a[predicate=vampire_pack:player/tag_vampire]
+
+# Reset Scoreboards
+scoreboard players reset .tempFallDist v.Values
