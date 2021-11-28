@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "ate_human_eyes": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "player": {
+          "type": "minecraft:player",
+          "nbt": "{Tags:[Vampire]}"
+        },
+        "item": {
+          "items": [
+            "minecraft:potion"
+          ],
+          "nbt": "{EnchantedBloodBottle:1b}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "v.pack:vampirism/enchanted_blood"
+  }
+}

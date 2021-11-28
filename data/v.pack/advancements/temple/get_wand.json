@@ -1,0 +1,25 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:blaze_rod",
+        "nbt": "{Enchantments:[{}]}"
+      },
+      "title": "Hell Wendy",
+      "description": "Combine a blaze rod and an ender eye on the ground.",
+      "hidden": false
+    },
+    "parent": "v.pack:vampirism_main",
+    "criteria": {
+      "got_wand": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "item": "minecraft:blaze_rod",
+              "nbt": "{HellWand:1b}"
+            }
+          ]
+        }
+      }
+    }
+  }

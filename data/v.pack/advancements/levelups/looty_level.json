@@ -1,0 +1,21 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:player_head",
+        "nbt": "{SkullOwner:\"Looty20\"}"
+      },
+      "title": "Sucker For You",
+      "description": "Be Looty20 and kill 120 Humans.",
+      "frame":"challenge",
+      "hidden": true
+    },
+    "parent": "v.pack:levelups/level5",
+    "criteria": {
+      "impossible": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "rewards": {
+      "function": "v.pack:levels/looty20_active"
+    }
+  }

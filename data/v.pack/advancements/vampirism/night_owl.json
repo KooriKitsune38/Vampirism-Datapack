@@ -1,0 +1,18 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:ender_pearl",
+        "nbt": "{Enchantments:[{}]}"
+      },
+      "title": "Night Owl",
+      "description": "Focus your sight to see in the dark with high blood concentrations.",
+      "frame": "challenge",
+      "hidden": false
+    },
+    "parent": "v.pack:vampirism/dark_sight",
+    "criteria": {
+      "impossible": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

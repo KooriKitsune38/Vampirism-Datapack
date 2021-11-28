@@ -1,0 +1,16 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:poppy"
+      },
+      "title": "Forever Human",
+      "description": "Use some Sanctum Water to shower off the darkness from your shoulders.",
+      "hidden": false
+    },
+    "parent": "v.pack:altar/got_sanctum",
+    "criteria": {
+      "impossible": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

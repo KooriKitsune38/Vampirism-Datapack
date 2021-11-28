@@ -1,0 +1,31 @@
+[
+    {
+        "condition": "inverted",
+        "term": {
+            "condition": "minecraft:reference",
+            "name": "v.pack:player/fire_resistance"
+        }
+    },
+    {
+        "condition": "inverted",
+        "term": {
+            "condition": "minecraft:reference",
+            "name": "v.pack:player/level15_light_exceptions"
+        }
+    },
+    {
+        "condition": "inverted",
+        "term": {
+            "condition": "minecraft:reference",
+            "name": "v.pack:player/wearing_helmet"
+        }
+    },
+    {
+        "condition": "reference",
+        "name": "v.pack:player/under_sunlight"
+    },
+    {
+        "condition": "reference",
+        "name": "v.pack:world/is_daytime"
+    }
+]

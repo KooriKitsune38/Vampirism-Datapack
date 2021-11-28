@@ -1,0 +1,16 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:ender_pearl"
+      },
+      "title": "Dark Senses",
+      "description": "Use your increased senses to locate presences hidden in the dark.",
+      "hidden": false
+    },
+    "parent": "v.pack:vampirism/vampire_adv",
+    "criteria": {
+      "impossible": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

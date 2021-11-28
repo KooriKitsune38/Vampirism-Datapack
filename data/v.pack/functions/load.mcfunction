@@ -1,0 +1,2 @@
+tellraw @s [{"text":"Loading will remove: 64 Crying Obsidian, the activator stick, the 3 upgrade papers. ","color":"light_purple"}]
+tellraw @s [{"text":"Are you sure you want to continue? ","color":"#e06060","italic":true},{"text":"Yes Babe!","color":"#bf3535","hoverEvent":{"action":"show_text","contents":[{"text":"Confirm"}]},"clickEvent":{"action":"run_command","value":"/function v.pack:load_confirmed"}}]

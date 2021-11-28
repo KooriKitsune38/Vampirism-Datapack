@@ -1,0 +1,16 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:fire_charge"
+      },
+      "title": "Medium Rare Meat",
+      "description": "Cook on fire, maybe not under the rare level.",
+      "hidden": false
+    },
+    "parent": "v.pack:vampirism/vampire_adv",
+    "criteria": {
+      "impossible": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

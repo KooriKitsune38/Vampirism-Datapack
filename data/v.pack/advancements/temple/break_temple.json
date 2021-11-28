@@ -1,0 +1,18 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:awkward\",CustomPotionColor:5707286}"
+      },
+      "title": "Mocked By The Darkness",
+      "description": "Destroy a temple anchor.",
+      "frame": "challenge",
+      "hidden": false
+    },
+    "parent": "v.pack:temple/temple_stage1",
+    "criteria": {
+      "impossible": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

@@ -1,0 +1,2 @@
+execute if predicate v.pack:world/is_nighttime run effect give @s strength 1 0 true
+execute as @s[predicate=!v.pack:player/regeneration] if predicate v.pack:world/is_midnight run effect give @s regeneration 3 1 true

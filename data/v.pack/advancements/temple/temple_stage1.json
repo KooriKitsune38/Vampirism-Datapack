@@ -1,0 +1,16 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:respawn_anchor"
+      },
+      "title": "A Contract With The Darkness",
+      "description": "Hop onto the respawn anchor with the Hell Wand and 4 crying obsidians.",
+      "hidden": false
+    },
+    "parent": "v.pack:temple/get_wand",
+    "criteria": {
+      "impossible": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

@@ -1,0 +1,16 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:iron_ingot"
+      },
+      "title": "Pans can't only cook Hot-Dogs",
+      "description": "Feel the amazing sensation of touching iron as a Vampire.",
+      "hidden": false
+    },
+    "parent": "v.pack:vampirism/vampire_adv",
+    "criteria": {
+      "impossible": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

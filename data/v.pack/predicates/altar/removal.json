@@ -1,0 +1,19 @@
+{
+    "condition": "alternative",
+    "terms": [
+        {
+            "condition": "minecraft:inverted",
+            "term": {
+                "condition": "reference",
+                "name": "v.pack:altar/altar_base"
+            }
+        },
+        {
+            "condition": "minecraft:inverted",
+            "term": {
+                "condition": "reference",
+                "name": "v.pack:altar/light_requirement"
+            }
+        }
+    ]
+}

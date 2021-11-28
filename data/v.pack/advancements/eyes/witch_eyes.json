@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "trigger_1": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:witch"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "v.pack:vampirism/kill_blood"
+  }
+}

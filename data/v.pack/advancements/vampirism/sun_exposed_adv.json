@@ -1,0 +1,16 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:sunflower"
+    },
+    "title": "Tanning Hater",
+    "description": "Avoid getting a tan under the sun.",
+    "hidden": false
+  },
+  "parent": "v.pack:vampirism/vampire_adv",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

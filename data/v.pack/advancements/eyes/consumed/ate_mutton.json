@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "ate_human_eyes": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "player": {
+          "type": "minecraft:player",
+          "nbt": "{Tags:[Vampire]}"
+        },
+        "item": {
+          "items": [
+            "minecraft:mutton"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "v.pack:vampirism/mutton_blood"
+  }
+}

@@ -1,0 +1,19 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:diamond_sword"
+      },
+      "title": "Bloody Madness",
+      "description": "Kill 60 Humans.",
+      "hidden": false
+    },
+    "parent": "v.pack:levelups/level3",
+    "criteria": {
+      "impossible": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "rewards": {
+      "function": "v.pack:levels/level4_active"
+    }
+  }

@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "drink": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "player": {
+          "type": "minecraft:player"
+        },
+        "item": {
+          "items": [
+            "minecraft:potion"
+          ],
+          "nbt": "{SanctumWater:1b}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "v.pack:altar/human_check"
+  }
+}

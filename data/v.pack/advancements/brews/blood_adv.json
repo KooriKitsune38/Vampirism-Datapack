@@ -1,0 +1,25 @@
+{
+"display": {
+    "icon": {
+      "item": "minecraft:potion",
+      "nbt": "{CustomPotionColor:13378339}"
+    },
+    "title": "Blood Thirst",
+    "description": "Extract some red human juice.",
+    "hidden": false
+  },
+  "parent": "v.pack:brews/stand_adv",
+  "criteria": {
+    "inventory": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:potion",
+            "nbt": "{BloodBottle:1b}"
+          }
+        ]
+      }
+    }
+  }
+}

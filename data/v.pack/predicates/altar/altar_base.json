@@ -1,0 +1,197 @@
+[
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": 1,
+    "offsetY": -1,
+    "predicate": {
+      "block": {
+        "tag": "v.pack:quartz.slab",
+        "state": {
+          "type": "bottom"
+        }
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": -1,
+    "offsetY": -1,
+    "predicate": {
+      "block": {
+        "tag": "v.pack:quartz.slab",
+        "state": {
+          "type": "bottom"
+        }
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetZ": 1,
+    "offsetY": -1,
+    "predicate": {
+      "block": {
+        "tag": "v.pack:quartz.slab",
+        "state": {
+          "type": "bottom"
+        }
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetZ": -1,
+    "offsetY": -1,
+    "predicate": {
+      "block": {
+        "tag": "v.pack:quartz.slab",
+        "state": {
+          "type": "bottom"
+        }
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetZ": 1,
+    "offsetX": 1,
+    "offsetY": -1,
+    "predicate": {
+      "block": {
+        "tag": "v.pack:quartz.slab",
+        "state": {
+          "type": "bottom"
+        }
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetZ": -1,
+    "offsetX": -1,
+    "offsetY": -1,
+    "predicate": {
+      "block": {
+        "tag": "v.pack:quartz.slab",
+        "state": {
+          "type": "bottom"
+        }
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetZ": 1,
+    "offsetX": -1,
+    "offsetY": -1,
+    "predicate": {
+      "block": {
+        "tag": "v.pack:quartz.slab",
+        "state": {
+          "type": "bottom"
+        }
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetZ": -1,
+    "offsetX": 1,
+    "offsetY": -1,
+    "predicate": {
+      "block": {
+        "tag": "v.pack:quartz.slab",
+        "state": {
+          "type": "bottom"
+        }
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": 1,
+    "predicate": {
+      "block": {
+        "tag": "v.pack:quartz.stairs",
+        "state": {
+          "half": "top"
+        }
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": -1,
+    "predicate": {
+      "block": {
+        "tag": "v.pack:quartz.stairs",
+        "state": {
+          "half": "top"
+        }
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetZ": 1,
+    "predicate": {
+      "block": {
+        "tag": "v.pack:quartz.stairs",
+        "state": {
+          "half": "top"
+        }
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetZ": -1,
+    "predicate": {
+      "block": {
+        "tag": "v.pack:quartz.stairs",
+        "state": {
+          "half": "top"
+        }
+      }
+    }
+  },
+  {
+    "condition": "alternative",
+    "terms": [
+      {
+        "condition": "minecraft:location_check",
+        "offsetY": -1,
+        "predicate": {
+          "block": {
+            "blocks": [
+              "minecraft:quartz_pillar"
+            ]
+          }
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "offsetY": -1,
+        "predicate": {
+          "block": {
+            "blocks": [
+              "minecraft:glowstone"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "condition": "minecraft:location_check",
+    "predicate": {
+      "block": {
+        "tag": "v.pack:quartz.slab",
+        "state": {
+          "type": "bottom",
+          "waterlogged": true
+        }
+      }
+    }
+  }
+]

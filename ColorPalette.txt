@@ -1,0 +1,20 @@
+# Altar
+Main #9FFEFF
+Color2 #0FF1CE
+Gold #ffd966
+
+# Vampirism
+Main #bf3535
+Alter #a94c4c
+Alter2 #e06060
+Alter3 #e06060
+Error #bf3535
+Error2 #6f0000
+Error3 #bf3535
+Error4 #bf0000
+#bf3535
+
+Stage1 #c17171
+Stage2 #a94c4c
+Stage3 #924444
+Stage4 #6d3636

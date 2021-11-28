@@ -1,0 +1,16 @@
+{
+    "condition": "minecraft:alternative",
+    "terms": [
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{Tags:[t.bat]}"
+            }
+        },
+        {
+            "condition": "minecraft:reference",
+            "name":"v.pack:player/is.vampire"
+        }
+    ]
+}

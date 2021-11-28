@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "trigger_1": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[Vampire]}"
+        },
+        "damage": {
+          "source_entity": {
+            "equipment": {
+              "mainhand": {
+                "item": "minecraft:iron_shovel"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "v.pack:vampirism/advancements/iron_shovel_dmg"
+  }
+}

@@ -1,0 +1,20 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:netherite_sword"
+      },
+      "title": "Infernal Beast",
+      "description": "Kill 110 Humans.",
+      "frame":"challenge",
+      "hidden": false
+    },
+    "parent": "v.pack:levelups/level4",
+    "criteria": {
+      "impossible": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "rewards": {
+      "function": "v.pack:levels/level5_active"
+    }
+  }

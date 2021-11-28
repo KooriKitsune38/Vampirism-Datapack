@@ -1,2 +1,0 @@
-execute if score .tempFallDist v.Values matches 15.. if entity @s[predicate=vampire_pack:player/is_sneaking,tag=!BatTransformed] positioned ~ ~2.5 ~ run function vampire_pack:bat_transformation/bat_start
-execute if entity @s[tag=BatTransformed] run function vampire_pack:bat_transformation/bat_continue

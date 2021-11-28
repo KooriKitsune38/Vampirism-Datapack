@@ -1,0 +1,43 @@
+[
+  {
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "block": {
+            "block": "minecraft:brewing_stand",
+            "nbt": "{Items:[{Slot:2b,id:\"minecraft:glass_bottle\"}]}"
+          }
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "block": {
+            "block": "minecraft:brewing_stand",
+            "nbt": "{Items:[{Slot:1b,id:\"minecraft:glass_bottle\"}]}"
+          }
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "block": {
+            "block": "minecraft:brewing_stand",
+            "nbt": "{Items:[{Slot:0b,id:\"minecraft:glass_bottle\"}]}"
+          }
+        }
+      }
+    ]
+  },
+  {
+   "condition": "minecraft:location_check",
+   "predicate": {
+     "block": {
+       "block": "minecraft:brewing_stand",
+       "nbt": "{Items:[{Slot:3b,id:\"minecraft:spider_eye\",tag:{HumanEyes:1b}}]}"
+     }
+   }
+ }
+]
