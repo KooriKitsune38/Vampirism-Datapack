@@ -4,7 +4,7 @@ tp @s ~ ~ ~
 
 # Bat
 #> Summon
-execute if entity @s[tag=!t.transformed] run summon bat ~ ~ ~ {Silent:1b,NoAI:1b,Tags:[t.bat],ActiveEffects:[{Id:11b,Amplifier:127b,Duration:999999,ShowParticles:false}]}
+execute if entity @s[tag=!t.transformed] run summon bat ~ ~ ~ {Tags:[t.bat],ActiveEffects:[{Id:11b,Amplifier:127b,Duration:999999,ShowParticles:false}],Attributes:[{Name:"generic.movement_speed",Base:0}]}
 #> Transfer UUID
 scoreboard players operation @e[type=bat,tag=t.bat,distance=..2,limit=1,sort=nearest] vampiresUUIDs = @s vampiresUUIDs
 

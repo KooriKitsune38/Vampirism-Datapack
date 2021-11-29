@@ -7,9 +7,7 @@ scoreboard objectives add vampirismtimer dummy
 scoreboard objectives add brewingtimer dummy
 scoreboard objectives add bloodtimer dummy
 scoreboard objectives add brewuitimer dummy
-scoreboard objectives add v.Values dummy
 scoreboard objectives add brewingcuritems dummy
-scoreboard objectives add v.Values dummy
 scoreboard objectives add custbrewtime dummy
 scoreboard objectives add vampiredead deathCount
 scoreboard objectives add vampirekills dummy
@@ -45,6 +43,7 @@ scoreboard objectives add EnableBat trigger
 #scoreboard players set !double qwuthalnumge 2
 scoreboard players set .1 v.Values 1
 scoreboard players set .7 v.Values 7
+scoreboard players set .batVersion v.Values 1
 
 #scoreboard players set #MinuteInSeconds qwuthalcalculate 60
 #scoreboard players set #SecondInTick qwuthalcalculate 20

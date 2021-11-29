@@ -1,7 +1,7 @@
 #> v.pack:b.transf/bat_stop
 
 # Tp upwards
-tp @s ~ ~1 ~
+tp @s ~ ~1.5 ~
 
 # Set Gamemode to respective mode
 execute store result score .gamemode v.Values run data get entity @s previousPlayerGameType
@@ -18,6 +18,9 @@ playsound particle.soul_escape player @a ~ ~ ~ 2 1
 playsound entity.enderman.teleport player @a ~ ~ ~ 1.5 .1
 playsound entity.puffer_fish.blow_out player @a ~ ~ ~ .7 .5
 playsound entity.puffer_fish.blow_out player @a ~ ~ ~ 1 1.5
+
+# Tellrwa
+execute if score @s v.bloodL matches ..79 run tellraw @s [{"text":"Low Blood Level!","color":"#bf3535"}]
 
 # Tagsw
 tag @s remove t.transformed
