@@ -14,6 +14,6 @@ scoreboard players operation .x1 v.Values -= .x v.Values
 scoreboard players operation .y1 v.Values -= .y v.Values
 scoreboard players operation .z1 v.Values -= .z v.Values
 
-execute store result entity @s Motion[0] double .8 run scoreboard players get .x1 v.Values
-execute store result entity @s Motion[1] double .8 run scoreboard players get .y1 v.Values
-execute store result entity @s Motion[2] double .8 run scoreboard players get .z1 v.Values
+execute store result entity @s Motion[0] double .6 run scoreboard players get .x1 v.Values
+execute store result entity @s Motion[1] double .6 run scoreboard players get .y1 v.Values
+execute store result entity @s Motion[2] double .6 run scoreboard players get .z1 v.Values
