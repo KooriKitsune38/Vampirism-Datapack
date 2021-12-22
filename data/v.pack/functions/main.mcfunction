@@ -33,7 +33,7 @@ execute as @e[predicate=v.pack:world/in_nether,type=item,nbt={Item:{id:"minecraf
 #execute in v.pack:qwuthal_dimension run function v.pack:qwuthal_dungeon/loop
 
 #Reset Timer#
-#execute as @a at @s unless entity @e[distance=..1.5,tag=QwuthalPortal] run scoreboard players reset @s qwuthaltptimer
+#execute as @a at @s unless entity @e[distance=..1.5,tag=v.qwuthalPortal] run scoreboard players reset @s qwuthaltptimer
 
 #Trigger#
 #scoreboard players enable @a QwuthalResetsIn
