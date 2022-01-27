@@ -10,7 +10,9 @@
           "source_entity": {
             "equipment": {
               "mainhand": {
-                "item": "minecraft:iron_axe"
+                "items": [
+                  "minecraft:iron_axe"
+                ]
               }
             }
           }

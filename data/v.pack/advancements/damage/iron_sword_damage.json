@@ -10,7 +10,9 @@
           "source_entity": {
             "equipment": {
               "mainhand": {
-                "item": "minecraft:iron_sword"
+                "items": [
+                  "minecraft:iron_sword"
+                ]
               }
             }
           }
@@ -19,6 +21,6 @@
     }
   },
   "rewards": {
-    "function":"v.pack:vampirism/advancements/iron_sword_dmg"
+    "function": "v.pack:vampirism/advancements/iron_sword_dmg"
   }
 }

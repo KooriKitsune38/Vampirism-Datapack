@@ -1,26 +1,28 @@
 {
-    "display": {
-        "icon": {
-          "item": "minecraft:potion",
-          "nbt": "{CustomPotionColor:13378339,Enchantments:[{}]}"
-        },
-        "title": "Fancy Thirst",
-        "description": "Brew some blood with magical sources.",
-        "frame": "challenge",
-        "hidden": false
-      },
-      "parent": "v.pack:brews/blood_adv",
-      "criteria": {
-        "inventory": {
-          "trigger": "minecraft:inventory_changed",
-          "conditions": {
+  "display": {
+    "icon": {
+      "item": "minecraft:potion",
+      "nbt": "{CustomPotionColor:13378339,Enchantments:[{}]}"
+    },
+    "title": "Fancy Thirst",
+    "description": "Brew some blood with magical sources.",
+    "frame": "challenge",
+    "hidden": false
+  },
+  "parent": "v.pack:brews/blood_adv",
+  "criteria": {
+    "inventory": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
             "items": [
-              {
-                "item": "minecraft:potion",
-                "nbt": "{EnchantedBloodBottle:1b}"
-              }
-            ]
+              "minecraft:potion"
+            ],
+            "nbt": "{EnchantedBloodBottle:1b}"
           }
-        }
+        ]
       }
     }
+  }
+}

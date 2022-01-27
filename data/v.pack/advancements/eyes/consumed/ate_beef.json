@@ -7,7 +7,7 @@
           "type": "minecraft:player",
           "nbt": "{Tags:[Vampire]}"
         },
-        "item": {
+        "items": {
           "items": [
             "minecraft:beef"
           ]
