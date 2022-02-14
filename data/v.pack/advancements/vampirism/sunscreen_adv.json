@@ -15,6 +15,10 @@
         "conditions": {
           "player": [
             {
+              "condition":"reference",
+              "name": "v.pack:player/is.vampire"
+            },
+            {
               "condition": "reference",
               "name": "v.pack:player/fire_resistance"
             },
