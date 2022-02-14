@@ -1,7 +1,7 @@
 #> v.pack:b.transf/bat_stop
 
 # Tp upwards
-tp @s ~ ~1.5 ~
+execute if block ~ ~1 ~ #v.pack:air if block ~ ~1.5 ~ #v.pack:air run tp @s ~ ~1.5 ~
 
 # Set Gamemode to respective mode
 execute store result score .gamemode v.Values run data get entity @s previousPlayerGameType

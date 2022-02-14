@@ -1,0 +1,26 @@
+[
+    {
+        "condition": "inverted",
+        "term": {
+            "condition": "location_check",
+            "offsetZ": 1,
+            "predicate": {
+                "block": {
+                    "tag": "v.pack:air"
+                }
+            }
+        }
+    },
+    {
+        "condition": "inverted",
+        "term": {
+            "condition": "location_check",
+            "offsetZ": -1,
+            "predicate": {
+                "block": {
+                    "tag": "v.pack:air"
+                }
+            }
+        }
+    }
+]
