@@ -6,6 +6,3 @@ effect give @s nausea 5 0 true
 
 # Scoreboard
 tag @s add v.sunExposed
-
-## Advancements ##
-advancement grant @s only v.pack:vampirism/sun_exposed_adv

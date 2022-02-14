@@ -1,16 +1,46 @@
 {
-    "display": {
-      "icon": {
-        "item": "minecraft:glass_bottle"
-      },
-      "title": "Hide & Seek",
-      "description": "Sneak in the dark to become invisible.",
-      "hidden": false
+  "display": {
+    "icon": {
+      "item": "minecraft:glass_bottle"
     },
-    "parent": "v.pack:vampirism/vampire_adv",
-    "criteria": {
-      "impossible": {
-        "trigger": "minecraft:impossible"
+    "title": "Hide & Seek",
+    "description": "Sneak in the dark to become invisible.",
+    "hidden": false
+  },
+  "parent": "v.pack:vampirism/vampire_adv",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "alternative",
+            "terms": [
+              {
+                "condition": "reference",
+                "name": "v.pack:world/is_dark3"
+              },
+              {
+                "condition": "reference",
+                "name": "v.pack:world/in_nether"
+              }
+            ]
+          },
+          {
+            "condition": "reference",
+            "name": "v.pack:player/is_sneaking"
+          },
+          {
+            "condition": "entity_scores",
+            "entity": "this",
+            "scores": {
+              "v.bloodL": {
+                "min": 60
+              }
+            }
+          }
+        ]
       }
     }
   }
+}

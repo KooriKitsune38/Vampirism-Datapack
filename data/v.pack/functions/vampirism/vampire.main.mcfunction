@@ -29,11 +29,11 @@ execute if score @s v.bloodL matches ..79 run function v.pack:b.transf/low.bl
 execute if predicate v.pack:world/in_overworld run function v.pack:vampirism/buffs/overworld_buffs
 
 ## Not Overworld Buffs
-execute unless predicate v.pack:world/in_overworld run function v.pack:vampirism/buffs/nether_buffs
+execute unless predicate v.pack:world/in_nether run function v.pack:vampirism/buffs/nether_buffs
 
 # Vampire Nerfs
 #> Fire Damage
-execute if predicate v.pack:player/on_fire run function v.pack:vampirism/nerfs/fire_damage
+effect give @s[predicate=v.pack:player/on_fire] wither 2 0 true
 
 #> Touching Iron
 execute if predicate v.pack:player/touching_iron run function v.pack:vampirism/nerfs/touching_iron
@@ -41,7 +41,7 @@ execute positioned ~ ~-.25 ~ if predicate v.pack:player/touching_iron run functi
 
 #> If under_sunlight, has no fire resistance
 execute unless entity @s[tag=t.transformed] if predicate v.pack:player/sunlight_exposure run function v.pack:vampirism/sunlight/sun_exposed
-execute if predicate v.pack:world/in_overworld if predicate v.pack:player/under_sunlight run function v.pack:vampirism/sunlight/under.sun
+execute if predicate v.pack:world/in_overworld if predicate v.pack:player/under_sunlight run effect give @s weakness 1 0 true
 
 # Player's Level
 function v.pack:vampirism/bl/player_level

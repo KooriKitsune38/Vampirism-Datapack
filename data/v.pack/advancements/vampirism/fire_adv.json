@@ -10,7 +10,15 @@
     "parent": "v.pack:vampirism/vampire_adv",
     "criteria": {
       "impossible": {
-        "trigger": "minecraft:impossible"
+        "trigger": "minecraft:tick",
+        "conditions": {
+          "player": [
+            {
+              "condition": "reference",
+              "name": "v.pack:player/on_fire"
+            }
+          ]
+        }
       }
     }
   }

@@ -26,10 +26,6 @@ execute if entity @s[scores={v.bloodL=..2}] run effect give @s slowness 1 2 true
 execute if entity @s[scores={v.bloodL=..1}] run effect give @s instant_damage 1 0 true
 
 #Leveling#
-advancement grant @s[scores={vampirekills=10..}] only v.pack:levelups/level2
-advancement grant @s[scores={vampirekills=25..}] only v.pack:levelups/level3
-advancement grant @s[scores={vampirekills=60..}] only v.pack:levelups/level4
-advancement grant @s[scores={vampirekills=110..}] only v.pack:levelups/level5
 advancement grant @s[scores={vampirekills=120..},name="Looty20"] only v.pack:levelups/looty_level
 
 # Death

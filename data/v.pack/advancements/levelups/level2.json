@@ -1,19 +1,32 @@
 {
-    "display": {
-      "icon": {
-        "item": "minecraft:stone_sword"
-      },
-      "title": "Lost Soul",
-      "description": "Kill 10 Humans.",
-      "hidden": false
+  "display": {
+    "icon": {
+      "item": "minecraft:stone_sword"
     },
-    "parent": "v.pack:vampirism/vampire_adv",
-    "criteria": {
-      "impossible": {
-        "trigger": "minecraft:impossible"
+    "title": "Lost Soul",
+    "description": "Kill 10 Humans.",
+    "hidden": false
+  },
+  "parent": "v.pack:vampirism/vampire_adv",
+  "criteria": {
+    "impossible": {
+      "trigger": "tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "entity_scores",
+            "entity": "this",
+            "scores": {
+              "vampirekills":{
+                "min": 10
+              }
+            }
+          }
+        ]
       }
-    },
-    "rewards": {
-      "function": "v.pack:levels/level2_active"
     }
+  },
+  "rewards": {
+    "function": "v.pack:levels/level2_active"
   }
+}

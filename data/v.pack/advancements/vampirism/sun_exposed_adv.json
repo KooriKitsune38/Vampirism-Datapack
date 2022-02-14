@@ -10,7 +10,25 @@
   "parent": "v.pack:vampirism/vampire_adv",
   "criteria": {
     "impossible": {
-      "trigger": "minecraft:impossible"
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "inverted",
+            "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "nbt": "{Tags:[t.transformed]}"
+                }
+            }
+          },
+          {
+            "condition": "reference",
+            "name": "v.pack:player/sunlight_exposure"
+          }
+        ]
+      }
     }
   }
 }

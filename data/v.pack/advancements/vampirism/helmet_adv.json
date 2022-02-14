@@ -10,7 +10,34 @@
     "parent": "v.pack:vampirism/sun_exposed_adv",
     "criteria": {
       "impossible": {
-        "trigger": "minecraft:impossible"
+        "trigger": "minecraft:tick",
+        "conditions": {
+          "player": [
+            {
+              "condition": "reference",
+              "name": "v.pack:player/wearing_helmet"
+            },
+            {
+              "condition": "inverted",
+              "term": {
+                  "condition": "reference",
+                  "name": "v.pack:player/level15_light_exceptions"
+              }
+            },
+            {
+              "condition": "reference",
+              "name": "v.pack:world/is_daytime"
+            },
+            {
+              "condition": "reference",
+              "name": "v.pack:world/in_overworld"
+            },
+            {
+              "condition": "reference",
+              "name": "v.pack:player/under_sunlight"
+            }
+          ]
+        }
       }
     }
   }
