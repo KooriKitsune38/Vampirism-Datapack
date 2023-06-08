@@ -1,6 +1,4 @@
 {
-  "min_y": -64,
-  "height": 256,
   "ultrawarm": false,
   "natural": false,
   "piglin_safe": false,
@@ -13,5 +11,9 @@
   "ambient_light": 0.05,
   "logical_height": 256,
   "effects": "minecraft:the_nether",
-  "infiniburn": "minecraft:infiniburn_nether"
+  "infiniburn": "#minecraft:infiniburn_nether",
+  "min_y": 0,
+  "height": 256,
+  "monster_spawn_light_level": 0,
+  "monster_spawn_block_light_limit": 0
 }

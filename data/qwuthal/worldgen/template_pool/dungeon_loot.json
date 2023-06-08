@@ -1,0 +1,32 @@
+{
+  "fallback": "empty",
+  "elements": [
+    {
+      "weight": 150,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "qwuthal:dungeon/air",
+        "processors": "empty"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "qwuthal:dungeon/generic_loot",
+        "processors": "empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "qwuthal:dungeon/jackpot",
+        "processors": "empty"
+      }
+    }
+  ]
+}

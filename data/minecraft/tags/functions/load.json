@@ -1,5 +1,6 @@
 {
     "values": [
-        "v.pack:reload"
+        "v.pack:reload",
+        "qwuthal:reload"
     ]
 }

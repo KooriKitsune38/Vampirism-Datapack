@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:jigsaw",
+    "biomes": "qwuthal:qwuthal",
+    "step": "strongholds",
+    "spawn_overrides": {},
+    "terrain_adaptation": "none",
+    "start_pool": "qwuthal:dungeon_start",
+    "size": 7,
+    "start_height": {
+      "absolute": 5
+    },
+    "max_distance_from_center": 80,
+    "use_expansion_hack": false
+  }
+  
