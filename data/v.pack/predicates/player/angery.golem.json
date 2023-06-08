@@ -1,5 +1,5 @@
 {
-    "condition": "minecraft:alternative",
+    "condition": "minecraft:any_of",
     "terms": [
         {
             "condition": "minecraft:entity_properties",
@@ -9,8 +9,23 @@
             }
         },
         {
-            "condition": "minecraft:reference",
-            "name":"v.pack:player/is.vampire"
+            "condition":"minecraft:all_of",
+            "terms":[            
+                {
+                    "condition": "minecraft:reference",
+                    "name":"v.pack:player/is.vampire"
+                },
+                {
+                    "condition":"inverted",
+                    "term":{
+                        "condition": "minecraft:entity_properties",
+                        "entity":"this",
+                        "predicate":{
+                            "nbt":"{Tags:[t.transformed]}"
+                        }
+                    }
+                }
+            ]
         }
     ]
 }

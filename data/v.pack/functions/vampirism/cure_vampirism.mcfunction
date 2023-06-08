@@ -1,6 +1,7 @@
 #> v.pack:vampirism/cure_vampirism
 
 tag @s remove Vampire
+tag @s remove v.lvl1
 tag @s remove v.lvl2
 tag @s remove v.lvl3
 tag @s remove v.lvl4

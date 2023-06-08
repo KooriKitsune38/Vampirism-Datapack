@@ -7,7 +7,7 @@ execute as @e[type=marker] at @s run function v.pack:as_marker
 execute as @e[type=villager,tag=v.Anchor] at @s run function v.pack:as_anchor
 
 #> Bat
-execute as @e[type=bat,tag=t.bat] at @s run function v.pack:b.transf/as_bat
+execute if score .batEnabled v.Values matches 1 as @e[type=bat,tag=t.bat] at @s run function v.pack:b.transf/as_bat
 
 #> Iron Golem attack nearby vampires/bats
 execute as @e[type=iron_golem] at @s run data modify entity @s AngryAt set from entity @e[type=#v.pack:angery.golem,predicate=v.pack:player/angery.golem,limit=1,sort=nearest,distance=..10] UUID
@@ -28,6 +28,7 @@ execute as @e[type=villager,tag=!v.Anchor] run data merge entity @s {DeathLootTa
 
 # Temple Stages
 execute as @e[predicate=v.pack:world/in_nether,type=item,nbt={Item:{id:"minecraft:paper"}}] at @s run function v.pack:temple/as_activators
+
 
 # Qwuthal Dungeons
 #execute in v.pack:qwuthal_dimension run function v.pack:qwuthal_dungeon/loop

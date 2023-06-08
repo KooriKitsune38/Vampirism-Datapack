@@ -1,3 +1,4 @@
+#> v.pack:altar/altar_activation
 kill @s
 #kill @e[distance=..1,type=item,nbt={Item:{id:"minecraft:glowstone_dust"}},limit=12,sort=nearest]
 #kill @e[distance=..1,type=item,nbt={Item:{id:"minecraft:ghast_tear"}},limit=1,sort=nearest]

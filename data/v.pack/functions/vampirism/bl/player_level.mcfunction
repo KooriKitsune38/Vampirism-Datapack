@@ -18,7 +18,7 @@ execute if entity @s[tag=v.lvl5] run function v.pack:vampirism/bl/lvl5
 execute if entity @s[tag=v.lvl6] run function v.pack:vampirism/bl/lvl6
 
 # Anemia
-execute if entity @s[scores={v.bloodL=..10}] run effect give @s[nbt=!{ActiveEffects:[{Id:17b, Amplifier:1b}]}] hunger 5 1 true
+execute if entity @s[scores={v.bloodL=..10}] run effect give @s[nbt=!{ActiveEffects:[{Id:17, Amplifier:1b}]}] hunger 5 1 true
 execute if entity @s[scores={v.bloodL=..10}] run effect give @s weakness 5 1 true
 execute if entity @s[scores={v.bloodL=..5}] run effect give @s slowness 1 0 true
 execute if entity @s[scores={v.bloodL=..3}] run effect give @s slowness 1 1 true

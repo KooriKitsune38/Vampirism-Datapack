@@ -41,7 +41,7 @@ setblock ~ ~ ~-2 minecraft:chiseled_polished_blackstone
 #> Armor Stand
 #summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Small:1b,Invisible:1b,Tags:["v.templePart"]}
 #> v.Anchor
-execute unless entity @e[tag=v.Anchor,type=villager,distance=..5] align xyz run summon villager ~0.5 ~.1 ~0.5 {id:"minecraft:villager",Tags:[v.Anchor,TempleStage2],CustomName:'{"text":"Vampire Temple"}',Silent:1b,Invulnerable:1b,NoAI:1b,ActiveEffects:[{Id:14b,Amplifier:1b,Duration:9999999,ShowParticles:0b}],VillagerData:{profession:"minecraft:none"},Offers:{Recipes:[{maxUses:1,buy:{id:"minecraft:gold_block",Count:4b},buyB:{id:"minecraft:wither_skeleton_skull",Count:4b},sell:{id:"minecraft:paper",Count:1b,tag:{display:{Name:'{"text":"Infernal Demands"}',Lore:['{"text":"Embrace the darkness and"}','{"text":"listen to your deepest nightmares"}']},StageActivator:3}}}]}}
+execute unless entity @e[tag=v.Anchor,type=villager,distance=..5] align xyz run summon villager ~0.5 ~.1 ~0.5 {id:"minecraft:villager",Tags:[v.Anchor,TempleStage2],CustomName:'{"text":"Vampire Temple"}',Silent:1b,Invulnerable:1b,NoAI:1b,ActiveEffects:[{Id:14,Amplifier:1b,Duration:-1,ShowParticles:0b}],VillagerData:{profession:"minecraft:none"},Offers:{Recipes:[{maxUses:1,buy:{id:"minecraft:gold_block",Count:4b},buyB:{id:"minecraft:wither_skeleton_skull",Count:4b},sell:{id:"minecraft:paper",Count:1b,tag:{display:{Name:'{"text":"Infernal Demands"}',Lore:['{"text":"Embrace the darkness and"}','{"text":"listen to your deepest nightmares"}']},StageActivator:3}}}]}}
 
 # Effects ##
 tellraw @a[distance=..100] {"text":"The Corners Of Fire have risen from the darkness.","color":"#a94c4c","bold":true}

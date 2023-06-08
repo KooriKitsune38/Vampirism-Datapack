@@ -41,6 +41,7 @@ scoreboard objectives add EnableBat trigger
 # Default Values
 #scoreboard players set cryobsdefvalue v.Values 4
 #scoreboard players set !double qwuthalnumge 2
+scoreboard players set .batEnabled v.Values 1
 scoreboard players set .1 v.Values 1
 scoreboard players set .7 v.Values 7
 scoreboard players set .batVersion v.Values 0

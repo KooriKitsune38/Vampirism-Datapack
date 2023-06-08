@@ -1,26 +1,27 @@
 [
     {
-        "condition": "inverted",
-        "term": {
-            "condition": "location_check",
-            "offsetY": 1,
-            "predicate": {
-                "block": {
-                    "tag": "v.pack:air"
-                }
-            }
+      "condition": "minecraft:inverted",
+      "term": {
+        "condition": "minecraft:location_check",
+        "offsetY": 1,
+        "predicate": {
+          "block": {
+            "tag": "v.pack:air"
+          }
         }
+      }
     },
     {
-        "condition": "inverted",
-        "term": {
-            "condition": "location_check",
-            "offsetY": -1,
-            "predicate": {
-                "block": {
-                    "tag": "v.pack:air"
-                }
-            }
+      "condition": "minecraft:inverted",
+      "term": {
+        "condition": "minecraft:location_check",
+        "offsetY": -1,
+        "predicate": {
+          "block": {
+            "tag": "v.pack:air"
+          }
         }
+      }
     }
-]
+  ]
+  

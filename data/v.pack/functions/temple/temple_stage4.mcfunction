@@ -51,7 +51,7 @@ setblock ~ ~-1 ~ minecraft:chiseled_polished_blackstone
 summon marker ~ ~-1 ~ {Tags:["v.templePart4","v.templePart","ParticlesUp"]}
 summon marker ~ ~-1 ~ {Tags:["v.templePart4b","v.templePart","ParticlesDown"]}
 #> Villager
-execute unless entity @e[tag=v.Anchor,type=villager,distance=..5] align xyz run summon villager ~0.5 ~ ~0.5 {id:"minecraft:villager",Tags:[v.Anchor,TempleStage4],CustomName:'{"text":"Vampire Temple"}',Silent:1b,Invulnerable:1b,NoAI:1b,ActiveEffects:[{Id:14b,Amplifier:1b,Duration:9999999,ShowParticles:0b}]}
+execute unless entity @e[tag=v.Anchor,type=villager,distance=..5] align xyz run summon villager ~0.5 ~ ~0.5 {id:"minecraft:villager",Tags:[v.Anchor,TempleStage4],CustomName:'{"text":"Vampire Temple"}',Silent:1b,Invulnerable:1b,NoAI:1b,ActiveEffects:[{Id:14,Amplifier:1b,Duration:-1,ShowParticles:0b}]}
 
 ## Effects ##
 execute as @a[distance=..200] run tellraw @s {"text":"The Temple has reached its final form","color":"#6d3636","bold":true}

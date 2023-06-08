@@ -1,13 +1,10 @@
 {
-  "condition": "minecraft:entity_properties",
-  "entity": "this",
+  "condition": "minecraft:location_check",
   "predicate": {
-    "location": {
+    "light": {
       "light": {
-        "light": {
-          "min": 0,
-          "max": 1
-        }
+        "min": 0,
+        "max": 1
       }
     }
   }

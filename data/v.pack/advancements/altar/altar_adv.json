@@ -1,17 +1,17 @@
 {
-    "display": {
-      "icon": {
-        "item": "minecraft:glowstone"
-      },
-      "title": "Holy Moly!",
-      "description": "Activate a Sanctum with 5 glowstone blocks.",
-      "frame": "task",
-      "hidden": false
+  "display": {
+    "icon": {
+      "item": "minecraft:glowstone"
     },
-    "parent": "v.pack:vampirism_main",
-    "criteria": {
-      "impossible": {
-        "trigger": "minecraft:impossible"
-      }
+    "title": "Holy Moly!",
+    "description": "Activate a Sanctum with 5 glowstone blocks.",
+    "frame": "task",
+    "hidden": false
+  },
+  "parent": "v.pack:vampirism_main",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
     }
   }
+}
