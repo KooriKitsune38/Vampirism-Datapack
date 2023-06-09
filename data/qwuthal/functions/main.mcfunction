@@ -6,9 +6,10 @@ execute as @e[type=item_display,tag=q.stalker] at @s run function qwuthal:stalke
 
 execute as @a at @s run function qwuthal:as_everyone
 
-scoreboard players add .qwuthalReset v.Values 1
+scoreboard players remove .qwuthalReset v.Values 1
 
-execute if entity @a[predicate=qwuthal:world/in_qwuthal] if score .qwuthalReset v.Values matches 24000.. run scoreboard players add .qwuthalDelay v.Values 1
+execute if entity @a[predicate=qwuthal:world/in_qwuthal] if score .qwuthalReset v.Values matches ..0 run scoreboard players add .qwuthalDelay v.Values 1
+execute if score .qwuthalReset v.Values matches 0..210 run function qwuthal:dungeon/timer
 execute if score .qwuthalDelay v.Values matches 60.. in qwuthal:qwuthal run function qwuthal:dungeon/reset_start
 
 

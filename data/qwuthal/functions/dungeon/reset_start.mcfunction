@@ -16,6 +16,5 @@ function qwuthal:killer/summon_killer
 function qwuthal:killer/summon_killer
 function qwuthal:killer/summon_killer
 
-scoreboard players reset .qwuthalReset v.Values
-
+scoreboard players set .qwuthalReset v.Values 24000
 scoreboard players reset .qwuthalDelay v.Values
