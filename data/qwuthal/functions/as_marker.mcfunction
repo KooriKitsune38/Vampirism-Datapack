@@ -15,6 +15,9 @@ execute if entity @s[tag=q.Library] run function qwuthal:library/library
 # Gate
 execute if entity @s[tag=q.Gate] if entity @e[type=item,nbt={Item:{tag:{q.Key:true}}},distance=..1.5] run function qwuthal:library/gate.open
 
+# Tree
+execute if entity @s[tag=q.Tree] run function qwuthal:dungeon/tree_room
+
 # Book Shelf
 execute if entity @s[tag=q.BookShelf] if block ~ ~ ~ chiseled_bookshelf run function qwuthal:dungeon/fill_shelf
 

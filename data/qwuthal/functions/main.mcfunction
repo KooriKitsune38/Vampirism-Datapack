@@ -3,7 +3,7 @@ execute as @e[type=armor_stand] at @s run function qwuthal:as_armor
 execute as @e[type=shulker] at @s run function qwuthal:as_shulker
 execute as @e[type=item_display,tag=q.Killer] at @s run function qwuthal:killer/main
 execute as @e[type=item_display,tag=q.stalker] at @s run function qwuthal:stalker/item
-
+execute as @e[type=vex,predicate=qwuthal:world/in_qwuthal] run function qwuthal:as_vex
 execute as @a at @s run function qwuthal:as_everyone
 
 scoreboard players remove .qwuthalReset v.Values 1
