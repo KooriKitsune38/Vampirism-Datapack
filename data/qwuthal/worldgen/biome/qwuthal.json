@@ -19,7 +19,7 @@
     }
   },
   "spawners": {
-    "creature": [
+    "monster": [
       {
         "type": "minecraft:vex",
         "weight": 1000,

@@ -1,0 +1,40 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:stone",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{Go:\"left\",q.killerDir:1b}"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:stone",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{Go:\"right\",q.killerDir:1b}"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:stone",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{Go:\"forward\",q.killerDir:1b}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

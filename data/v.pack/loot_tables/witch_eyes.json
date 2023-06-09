@@ -16,7 +16,7 @@
               },
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{display:{Name:'{\"text\":\"Witch Eyes\",\"italic\":false}',Lore:['{\"text\":\"Restores 10 Blood Points.\",\"color\":\"dark_red\"}','{\"text\":\"May weaken even vampires.\",\"color\":\"dark_red\"}']},WitchEyes:1b,Enchantments:[{}]}"
+                "tag": "{display:{Name:'{\"text\":\"Witch Eyes\",\"italic\":false}',Lore:['{\"text\":\"Restores 10 Blood Points.\",\"color\":\"dark_red\"}','{\"text\":\"May weaken even vampires.\",\"color\":\"dark_red\"}']},WitchEyes:1b,Enchantments:[{}],HideFlags:35}"
               }
             ]
           }

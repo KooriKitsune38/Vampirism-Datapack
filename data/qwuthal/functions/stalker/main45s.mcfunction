@@ -1,0 +1,2 @@
+execute in qwuthal:qwuthal as @a if predicate qwuthal:chance_10 at @s anchored eyes unless entity @e[type=item_display,tag=q.stalker,distance=..5] run summon minecraft:item_display ^ ^ ^-2 {item:{id:"ender_pearl",Count:1b},brightness:{sky:0,block:10},billboard:center,Tags:["q.stalker","q.Entity"]}
+schedule function qwuthal:stalker/main45s 45s replace

@@ -1,8 +1,15 @@
 execute as @e[type=marker] at @s run function qwuthal:as_marker
+execute as @e[type=armor_stand] at @s run function qwuthal:as_armor
+execute as @e[type=shulker] at @s run function qwuthal:as_shulker
+execute as @e[type=item_display,tag=q.Killer] at @s run function qwuthal:killer/main
+execute as @e[type=item_display,tag=q.stalker] at @s run function qwuthal:stalker/item
 
-execute as @a at @s unless entity @e[type=marker,tag=v.qwuthalPortal,distance=..1] run scoreboard players reset @s qwuthaltptimer
+execute as @a at @s run function qwuthal:as_everyone
 
 scoreboard players add .qwuthalReset v.Values 1
-execute if entity @a[predicate=qwuthal:world/in_qwuthal] if score .qwuthalReset v.Values matches 72000.. in qwuthal:qwuthal run function qwuthal:dungeon/reset_start
+
+execute if entity @a[predicate=qwuthal:world/in_qwuthal] if score .qwuthalReset v.Values matches 24000.. run scoreboard players add .qwuthalDelay v.Values 1
+execute if score .qwuthalDelay v.Values matches 60.. in qwuthal:qwuthal run function qwuthal:dungeon/reset_start
+
 
 #execute at @a run fill ~-10 ~10 ~-10 ~10 ~-10 ~10 air

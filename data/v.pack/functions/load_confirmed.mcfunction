@@ -11,8 +11,8 @@ clear @s minecraft:spider_eye{WitchEyes:1b}
 give @s potion{display:{Name:'{"text":"Blood Bottle","italic":false}',Lore:['{"text":"Restores 20 Blood Points.","color":"#bf3535"}']},HideFlags:32,BloodBottle:1b,CustomPotionColor:13378339,Potion:"minecraft:thick"}
 give @s potion{display:{Name:'{"text":"Enchanted Blood Bottle","italic":false,"color":"light_purple"}',Lore:['{"text":"Restores 35 Blood Points.","color":"#bf3535"}']},Enchantments:[{}],HideFlags:32,EnchantedBloodBottle:1b,CustomPotionColor:13378339}
 give @s potion{SanctumWater:1b,CustomPotionColor:10616812}
-give @s spider_eye{display:{Name:'{"text":"HumanEyes"}'},HumanEyes:1b}
-give @s spider_eye{display:{Name:'{"text":"WitchEyes"}'},WitchEyes:1b,Enchantments:[{}]}
+give @s spider_eye{display:{Name:'{"text":"Human Eyes"}'},HumanEyes:1b}
+give @s spider_eye{display:{Name:'{"text":"Witch Eyes"}'},WitchEyes:1b,Enchantments:[{}]}
 give @s minecraft:blaze_rod{HellWand:1b}
 give @s minecraft:crying_obsidian 64
 give @s minecraft:paper{display:{Name:'{"text":"Corners of Fire"}',Lore:['{"text":"Yelding the power requires the exposure of your greatest weakness."}']},StageActivator:2}
