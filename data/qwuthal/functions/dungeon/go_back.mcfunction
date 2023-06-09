@@ -1,8 +1,8 @@
 #> qwuthal:dungeon/go_back
 
-gamemode survival @s
-
 fill ~-1 15 ~-1 ~1 19 ~1 minecraft:bedrock hollow
-setblock ~ 11 ~ nether_portal
+setblock ~ 16 ~ nether_portal
 
-tp ~ 11 ~
+tp ~ 16 ~
+
+tag @s add q.SetSurvival

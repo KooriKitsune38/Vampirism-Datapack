@@ -13,4 +13,6 @@ execute if entity @s[predicate=qwuthal:player/is_sneaking] if score .playerRot v
 
 execute if entity @s[tag=q.Teleport] run function qwuthal:dungeon/place_player
 
-tag @s remove t.canTransform
+execute if entity @s[tag=q.SetSurvival] run function qwuthal:dungeon/set_survival
+
+tag @s[predicate=qwuthal:world/in_qwuthal] remove t.canTransform

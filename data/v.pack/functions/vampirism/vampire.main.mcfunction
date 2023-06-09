@@ -29,7 +29,7 @@ execute if score @s v.bloodL matches ..79 run function v.pack:b.transf/low.bl
 execute if predicate v.pack:world/in_overworld run function v.pack:vampirism/buffs/overworld_buffs
 
 ## Not Overworld Buffs
-execute if predicate v.pack:world/in_nether run function v.pack:vampirism/buffs/nether_buffs
+execute if predicate v.pack:world/in_nether_qwuthal run function v.pack:vampirism/buffs/nether_buffs
 
 # Vampire Nerfs
 #> Fire Damage
