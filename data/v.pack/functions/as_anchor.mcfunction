@@ -1,6 +1,9 @@
 # v.Anchor Particles
 function v.pack:temple/t.particles/particle_groups
 
+# Particle on top
+particle flame ~ ~2 ~ .1 .1 .1 0.01 1
+
 # Temple Vampirism Activator
 execute as @s[tag=TempleStage4] run execute as @a[distance=..5,predicate=!v.pack:player/is.vampire] unless entity @s[scores={vampirismtimer=1..}] store result score @s ritualhealth run data get entity @s Health
 execute as @s[tag=TempleStage4] run execute as @a[distance=..5,predicate=v.pack:player/ritual_requirements,predicate=!v.pack:player/is.vampire] unless entity @s[scores={vampirismtimer=1..}] run function v.pack:ritual/ritual_start_vampirism
