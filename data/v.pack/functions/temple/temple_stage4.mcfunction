@@ -52,12 +52,14 @@ summon marker ~ ~-1 ~ {Tags:["v.templePart4","v.templePart","ParticlesUp"]}
 summon marker ~ ~-1 ~ {Tags:["v.templePart4b","v.templePart","ParticlesDown"]}
 #> Villager
 execute unless entity @e[tag=v.Anchor,type=villager,distance=..5] align xyz run summon villager ~0.5 ~ ~0.5 {id:"minecraft:villager",Tags:[v.Anchor,TempleStage4],CustomName:'{"text":"Vampire Temple"}',Silent:1b,Invulnerable:1b,NoAI:1b,active_effects:[{id:"minecraft:invisibility",amplifier:1b,duration:-1,show_particles:0b}]}
+#> Name Marker
+summon area_effect_cloud ~ ~1.5 ~ {Tags:["v.templePart"],Age: -2147483648, Duration: -1, WaitTime: -2147483648,CustomName:'{"text":"Burn to Transform"}',CustomNameVisible:true}
 
 ## Effects ##
 execute as @a[distance=..200] run tellraw @s {"text":"The Temple has reached its final form","color":"#6d3636","bold":true}
 execute as @a[distance=..10] run title @s clear
 execute as @a[distance=..10] unless entity @s[predicate=v.pack:player/is.vampire] run title @s title [{"text":"Embrace the ","color":"#700000","bold":true},{"text":"darkness!","color":"#700000","bold":true}]
-execute as @a[distance=..10] unless entity @s[predicate=v.pack:player/is.vampire] run effect give @s minecraft:blindness 999999 0
+execute as @a[distance=..10] unless entity @s[predicate=v.pack:player/is.vampire] run effect give @s minecraft:blindness infinite 0
 
 ## Timers ##
 execute as @a[distance=..200] run scoreboard players reset @s spoopytimer
