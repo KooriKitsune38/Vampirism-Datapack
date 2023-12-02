@@ -1,0 +1,19 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:villager_trade",
+        "conditions": {
+          "item": {
+            "items": [
+              "minecraft:paper"
+            ],
+            "nbt": "{StageActivator:3}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "v.pack:temple/trade/activate_stage3"
+    }
+  }
+  

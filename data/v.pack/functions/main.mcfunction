@@ -27,7 +27,7 @@ execute as @e[type=witch] run data merge entity @s {DeathLootTable:"v.pack:witch
 execute as @e[type=villager,tag=!v.Anchor] run data merge entity @s {DeathLootTable:"v.pack:human_eyes"}
 
 # Temple Stages
-execute as @e[predicate=v.pack:world/in_nether,type=item,nbt={Item:{id:"minecraft:paper"}}] at @s run function v.pack:temple/as_activators
+#execute as @e[predicate=v.pack:world/in_nether,type=item,nbt={Item:{id:"minecraft:paper"}}] at @s run function v.pack:temple/as_activators
 
 
 # Qwuthal Dungeons
