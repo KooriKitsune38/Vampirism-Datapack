@@ -4,8 +4,8 @@
 execute if predicate v.pack:chance_03 run effect give @s instant_damage 1 0
 
 #> Particles if hit
-execute as @s[nbt={ActiveEffects:[{Id:7}]}] at @s run particle minecraft:dust 1 0 0 0.5 ~ ~1 ~ 0.3 0.5 0.3 1 30 force
-execute as @s[nbt={ActiveEffects:[{Id:7}]}] at @s run particle minecraft:crit ~ ~1 ~ 0.3 0.5 0.3 0.1 10 force
+execute as @s[nbt={active_effects:[{id:"minecraft:instant_damage"}]}] at @s run particle minecraft:dust 1 0 0 0.5 ~ ~1 ~ 0.3 0.5 0.3 1 30 force
+execute as @s[nbt={active_effects:[{id:"minecraft:instant_damage"}]}] at @s run particle minecraft:crit ~ ~1 ~ 0.3 0.5 0.3 0.1 10 force
 
 #> 5% Of starting Vampire Transformation
 execute as @s[predicate=v.pack:chance_05] run tag @s[predicate=!v.pack:player/is.vampire] add Vampirized

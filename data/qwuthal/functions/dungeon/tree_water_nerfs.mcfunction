@@ -1,3 +1,3 @@
 #> qwuthal:dungeon/tree_water_nerfs
 
-effect give @s[nbt=!{ActiveEffects:[{Id:19}]}] poison 1 2 true
+effect give @s[nbt=!{active_effects:[{id:"minecraft:poison"}]}] poison 1 2 true

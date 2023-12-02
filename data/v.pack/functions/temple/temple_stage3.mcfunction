@@ -46,7 +46,7 @@ setblock ~ ~-1 ~-2 minecraft:gold_block
 #> Armor Stand
 #summon marker ~ ~-1 ~ {NoGravity:1b,Invulnerable:1b,Small:1b,Invisible:1b,Tags:["v.templePart"]}
 #> Villager
-execute unless entity @e[tag=v.Anchor,type=villager,distance=..5] align xyz run summon villager ~0.5 ~-.9 ~0.5 {id:"minecraft:villager",Tags:[v.Anchor,TempleStage3],CustomName:'{"text":"Vampire Temple"}',Silent:1b,Invulnerable:1b,NoAI:1b,ActiveEffects:[{Id:14,Amplifier:1b,Duration:-1,ShowParticles:0b}],VillagerData:{profession:"minecraft:none"},Offers:{Recipes:[{maxUses:1,buy:{id:"minecraft:nether_star",Count:1b},sell:{id:"minecraft:paper",Count:1b,tag:{display:{Name:'{"text":"Final Sacrifice"}',Lore:['{"text":"Show that you can defeat the immortal creatures"}','{"text":"to embrace the darkness and leave the mortal world."}']},StageActivator:4}}}]}}
+execute unless entity @e[tag=v.Anchor,type=villager,distance=..5] align xyz run summon villager ~0.5 ~-.9 ~0.5 {id:"minecraft:villager",Tags:[v.Anchor,TempleStage3],CustomName:'{"text":"Vampire Temple"}',Silent:1b,Invulnerable:1b,NoAI:1b,active_effects:[{id:"minecraft:invisibility",amplifier:1b,duration:-1,show_particles:0b}],VillagerData:{profession:"minecraft:none"},Offers:{Recipes:[{maxUses:1,buy:{id:"minecraft:nether_star",Count:1b},sell:{id:"minecraft:paper",Count:1b,tag:{display:{Name:'{"text":"Final Sacrifice"}',Lore:['{"text":"Show that you can defeat the immortal creatures"}','{"text":"to embrace the darkness and leave the mortal world."}']},StageActivator:4}}}]}}
 
 ## Effects ##
 tellraw @a[distance=..150] {"text":"The Darkness has ascended","color":"#924444","bold":true}
