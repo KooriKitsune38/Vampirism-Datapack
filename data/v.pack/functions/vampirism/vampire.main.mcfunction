@@ -21,7 +21,7 @@ execute if entity @s[scores={EnableBat=1..},tag=!t.canTransform] run function v.
 execute if entity @s[scores={EnableBat=1..},tag=t.canTransform] run function v.pack:b.transf/bat_trigger_off
 
 execute if score @s v.bloodL matches 80.. if entity @s[tag=!t.Cancelled,tag=t.canTransform] run function v.pack:vampirism/buffs/bl_80
-execute unless block ~ ~-.2 ~ #v.pack:air run tag @s remove t.Cancelled
+execute if entity @s[nbt={OnGround:1b}] run tag @s remove t.Cancelled
 #> BL 79-
 execute if score @s v.bloodL matches ..79 run function v.pack:b.transf/low.bl
 
