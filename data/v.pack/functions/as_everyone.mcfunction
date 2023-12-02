@@ -28,3 +28,8 @@ execute if entity @s[predicate=v.pack:temple/wand_on_hand] if block ~ ~ ~ brewin
 
 # reset t.errorDisp
 execute unless predicate v.pack:player/is_sneaking run tag @s remove t.errorDisp
+
+# Clear Papers
+clear @s paper{StageActivator:2}
+clear @s paper{StageActivator:3}
+clear @s paper{StageActivator:4}
