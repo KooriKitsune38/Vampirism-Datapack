@@ -30,4 +30,4 @@ execute if score @s v.bloodL matches ..79 run tellraw @s [{"text":"Low Blood Lev
 
 # Tagsw
 tag @s remove t.transformed
-tag @s add t.Cancelled
+execute unless score .batAlwaysOn v.Values matches 1 run tag @s add t.Cancelled
