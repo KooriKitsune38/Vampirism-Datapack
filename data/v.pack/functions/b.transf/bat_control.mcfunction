@@ -1,7 +1,11 @@
 #> v.pack:b.transf/bat_control
 
 # Tp bat
-execute at @s as @e[type=bat,tag=.batTemp,limit=1,sort=nearest] positioned ~ ~.5 ~ run tp @s ^ ^ ^ ~ ~
+execute rotated as @s as @e[type=bat,tag=.batTemp,limit=1,sort=nearest] run tp @s ~ ~ ~ ~ ~ 
+execute unless predicate v.pack:player/riding_bat at @s as @e[type=bat,tag=.batTemp,limit=1,sort=nearest] positioned ~ ~.5 ~ run tp @s ^ ^ ^ ~ ~
+
+# Mount Bat
+execute if score @s mountBat matches 0.. run function v.pack:b.transf/mount_bat
 
 # Effects
 execute if predicate v.pack:player/is_sneaking run function v.pack:b.transf/bat.sneaking
