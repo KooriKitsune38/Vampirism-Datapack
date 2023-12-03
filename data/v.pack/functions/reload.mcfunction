@@ -17,6 +17,7 @@ scoreboard objectives add ritualhealth dummy
 scoreboard objectives add vampiresUUIDs dummy
 scoreboard objectives add batCancel dummy
 scoreboard objectives add mountBat dummy
+scoreboard objectives add mountBatDelay dummy
 scoreboard objectives add ToggleBat trigger
 #scoreboard objectives add vampflyingspeed minecraft.custom:minecraft.fly_one_cm
 #scoreboard objectives add daytimeerror dummy

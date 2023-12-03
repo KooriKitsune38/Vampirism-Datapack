@@ -1,7 +1,10 @@
 #> v.pack:b.transf/bat_start
 
 #> Tp a few blocks up
-tp @s ~ ~.5 ~
+tp @s ~ ~ ~
+
+# Mount Delay
+execute if score .batVersion v.Values matches 1 run scoreboard players set @s mountBatDelay 20
 
 # Bat
 #> Summon

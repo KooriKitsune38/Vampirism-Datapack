@@ -21,6 +21,7 @@ scoreboard objectives remove vampflyingspeed
 scoreboard objectives remove ToggleBat
 scoreboard objectives remove batCancel
 scoreboard objectives remove mountBat
+scoreboard objectives remove mountBatDelay
 #scoreboard objectives remove daytimeerror
 #scoreboard objectives remove overworlderror
 #scoreboard objectives remove spaceerror
