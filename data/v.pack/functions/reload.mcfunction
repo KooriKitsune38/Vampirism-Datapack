@@ -44,6 +44,7 @@ scoreboard objectives add ToggleBat trigger
 #scoreboard players set !double qwuthalnumge 2
 scoreboard players set .1 v.Values 1
 scoreboard players set .7 v.Values 7
+execute unless score .ironDamage v.Values matches -2147483648..2147483647 run scoreboard players set .ironDamage v.Values 1
 execute unless score .batEnabled v.Values matches -2147483648..2147483647 run scoreboard players set .batEnabled v.Values 1
 execute unless score .batAlwaysOn v.Values matches -2147483648..2147483647 run scoreboard players set .batAlwaysOn v.Values 0
 execute unless score .batVersion v.Values matches -2147483648..2147483647 run scoreboard players set .batVersion v.Values 0

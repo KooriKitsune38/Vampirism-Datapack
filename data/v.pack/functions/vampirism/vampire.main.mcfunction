@@ -36,8 +36,7 @@ execute if predicate v.pack:world/in_nether_qwuthal run function v.pack:vampiris
 effect give @s[predicate=v.pack:player/on_fire] wither 2 0 true
 
 #> Touching Iron
-execute if predicate v.pack:player/touching_iron run function v.pack:vampirism/nerfs/touching_iron
-execute positioned ~ ~-.25 ~ if predicate v.pack:player/touching_iron run function v.pack:vampirism/nerfs/touching_iron
+execute if score .ironDamage v.Values matches 1 run function v.pack:vampirism/iron_damage
 
 #> If under_sunlight, has no fire resistance
 execute unless entity @s[tag=t.transformed] if predicate v.pack:player/sunlight_exposure run function v.pack:vampirism/sunlight/sun_exposed
