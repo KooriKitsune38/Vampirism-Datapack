@@ -1,4 +1,5 @@
 {
+  "parent": "v.pack:damage/iron_dmg",
   "criteria": {
     "trigger_1": {
       "trigger": "minecraft:entity_hurt_player",
@@ -21,6 +22,6 @@
     }
   },
   "rewards": {
-    "function": "v.pack:vampirism/advancements/iron_shovel_dmg"
+    "function": "v.pack:vampirism/advancements/iron_dmg"
   }
 }
