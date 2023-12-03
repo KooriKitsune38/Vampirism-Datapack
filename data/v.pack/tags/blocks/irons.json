@@ -16,6 +16,7 @@
         "chipped_anvil",
         "damaged_anvil",
         "lantern",
-        "soul_lantern"
+        "soul_lantern",
+        "raw_iron_block"
     ]
 }
