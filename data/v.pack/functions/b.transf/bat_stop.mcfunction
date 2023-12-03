@@ -1,7 +1,7 @@
 #> v.pack:b.transf/bat_stop
 
 # Tp upwards
-execute if block ~ ~1 ~ #v.pack:air if block ~ ~1.5 ~ #v.pack:air run tp @s ~ ~1.5 ~
+execute if score .batVersion v.Values matches 0 if block ~ ~1 ~ #v.pack:air if block ~ ~1.5 ~ #v.pack:air run tp @s ~ ~1.5 ~
 
 # Set Gamemode to respective mode
 execute store result score .gamemode v.Values run data get entity @s previousPlayerGameType
@@ -10,8 +10,14 @@ execute if score .gamemode v.Values matches 0 run gamemode survival @s
 execute if score .gamemode v.Values matches 1 run gamemode creative @s
 execute if score .gamemode v.Values matches 2 run gamemode adventure @s
 
-# Give Resistance
+# Effects
 effect give @s resistance 1 255 true
+effect clear @s levitation
+effect clear @s slow_falling
+effect clear @s invisibility
+
+# Scoreboard
+scoreboard players reset @s batCancel
 
 # Playsound
 playsound particle.soul_escape player @a ~ ~ ~ 2 1
@@ -24,4 +30,4 @@ execute if score @s v.bloodL matches ..79 run tellraw @s [{"text":"Low Blood Lev
 
 # Tagsw
 tag @s remove t.transformed
-tag @s add t.Cancelled
+execute unless score .batAlwaysOn v.Values matches 1 run tag @s add t.Cancelled

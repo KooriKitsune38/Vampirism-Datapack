@@ -15,7 +15,8 @@ scoreboard objectives add v.bloodL dummy
 scoreboard objectives add vampfalldist dummy
 scoreboard objectives add ritualhealth dummy
 scoreboard objectives add vampiresUUIDs dummy
-scoreboard objectives add EnableBat trigger
+scoreboard objectives add batCancel dummy
+scoreboard objectives add ToggleBat trigger
 #scoreboard objectives add vampflyingspeed minecraft.custom:minecraft.fly_one_cm
 #scoreboard objectives add daytimeerror dummy
 #scoreboard objectives add overworlderror dummy
@@ -41,10 +42,12 @@ scoreboard objectives add EnableBat trigger
 # Default Values
 #scoreboard players set cryobsdefvalue v.Values 4
 #scoreboard players set !double qwuthalnumge 2
-scoreboard players set .batEnabled v.Values 1
 scoreboard players set .1 v.Values 1
 scoreboard players set .7 v.Values 7
-scoreboard players set .batVersion v.Values 0
+execute unless score .ironDamage v.Values matches -2147483648..2147483647 run scoreboard players set .ironDamage v.Values 1
+execute unless score .batEnabled v.Values matches -2147483648..2147483647 run scoreboard players set .batEnabled v.Values 1
+execute unless score .batAlwaysOn v.Values matches -2147483648..2147483647 run scoreboard players set .batAlwaysOn v.Values 0
+execute unless score .batVersion v.Values matches -2147483648..2147483647 run scoreboard players set .batVersion v.Values 0
 
 #scoreboard players set #MinuteInSeconds qwuthalcalculate 60
 #scoreboard players set #SecondInTick qwuthalcalculate 20

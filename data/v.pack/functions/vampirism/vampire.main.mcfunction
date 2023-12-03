@@ -16,12 +16,12 @@ execute if score .tempFallDist v.Values matches 30.. run function v.pack:vampiri
 
 #> BL 80+ (Bat Transformation)
 #> Trigger
-scoreboard players enable @s[scores={v.bloodL=80..}] EnableBat
-execute if entity @s[scores={EnableBat=1..},tag=!t.canTransform] run function v.pack:b.transf/bat_trigger_on
-execute if entity @s[scores={EnableBat=1..},tag=t.canTransform] run function v.pack:b.transf/bat_trigger_off
+scoreboard players enable @s[scores={v.bloodL=80..}] ToggleBat
+execute if entity @s[scores={ToggleBat=1..},tag=!t.canTransform] run function v.pack:b.transf/bat_trigger_on
+execute if entity @s[scores={ToggleBat=1..},tag=t.canTransform] run function v.pack:b.transf/bat_trigger_off
 
 execute if score @s v.bloodL matches 80.. if entity @s[tag=!t.Cancelled,tag=t.canTransform] run function v.pack:vampirism/buffs/bl_80
-execute unless block ~ ~-.2 ~ #v.pack:air run tag @s remove t.Cancelled
+execute if entity @s[nbt={OnGround:1b}] run tag @s remove t.Cancelled
 #> BL 79-
 execute if score @s v.bloodL matches ..79 run function v.pack:b.transf/low.bl
 
@@ -36,8 +36,7 @@ execute if predicate v.pack:world/in_nether_qwuthal run function v.pack:vampiris
 effect give @s[predicate=v.pack:player/on_fire] wither 2 0 true
 
 #> Touching Iron
-execute if predicate v.pack:player/touching_iron run function v.pack:vampirism/nerfs/touching_iron
-execute positioned ~ ~-.25 ~ if predicate v.pack:player/touching_iron run function v.pack:vampirism/nerfs/touching_iron
+execute if score .ironDamage v.Values matches 1 run function v.pack:vampirism/iron_damage
 
 #> If under_sunlight, has no fire resistance
 execute unless entity @s[tag=t.transformed] if predicate v.pack:player/sunlight_exposure run function v.pack:vampirism/sunlight/sun_exposed

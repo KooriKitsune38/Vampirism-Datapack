@@ -12,7 +12,7 @@ execute if score @s vampirismtimer matches 30000.. if predicate v.pack:chance_03
 execute if score @s vampirismtimer matches 48000.. if predicate v.pack:world/is_dark1 run effect give @s resistance 1 0 true
 
 #> Start Iron Weakness
-execute if score @s vampirismtimer matches 60000.. run function v.pack:vampirism/transformation/iron.weak
+execute if score .ironDamage v.Values matches 1 if score @s vampirismtimer matches 60000.. run function v.pack:vampirism/transformation/iron.weak
 
 #> 1st Part
 execute if score @s vampirismtimer matches ..60001 run function v.pack:vampirism/transformation/1st

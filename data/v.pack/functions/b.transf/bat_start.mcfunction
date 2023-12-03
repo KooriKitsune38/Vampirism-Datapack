@@ -1,16 +1,17 @@
 #> v.pack:b.transf/bat_start
+
 #> Tp a few blocks up
-tp @s ~ ~ ~
+tp @s ~ ~.5 ~
 
 # Bat
 #> Summon
-execute if entity @s[tag=!t.transformed] run summon bat ~ ~ ~ {Tags:[t.bat],active_effects:[{id:"minecraft:resistance",amplifier:127b,duration:-1,show_particles:false}],Attributes:[{Name:"generic.movement_speed",Base:0}]}
+execute if entity @s[tag=!t.transformed] run summon bat ~ ~ ~ {Tags:[t.bat],active_effects:[{id:"minecraft:resistance",amplifier:127b,duration:-1,show_particles:false}],Attributes:[{Name:"generic.movement_speed",Base:0}],NoAI:1b}
 #> Transfer UUID
 scoreboard players operation @e[type=bat,tag=t.bat,distance=..2,limit=1,sort=nearest] vampiresUUIDs = @s vampiresUUIDs
 
 # Spectator
 #> Set gamemode
-gamemode spectator @s
+execute if score .batVersion v.Values matches 0 run gamemode spectator @s
 
 # Miscellanous
 playsound entity.bat.takeoff player @a ~ ~ ~ 0.7 0.6
