@@ -16,6 +16,9 @@ effect clear @s levitation
 effect clear @s slow_falling
 effect clear @s invisibility
 
+# Scoreboard
+scoreboard players reset @s batCancel
+
 # Playsound
 playsound particle.soul_escape player @a ~ ~ ~ 2 1
 playsound entity.enderman.teleport player @a ~ ~ ~ 1.5 .1

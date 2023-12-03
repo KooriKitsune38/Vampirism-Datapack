@@ -1,10 +1,11 @@
 #> v.pack:b.transf/bat_control
 
 # Tp bat
-execute at @s as @e[type=bat,tag=.batTemp,limit=1,sort=nearest] positioned ~ ~.5 ~ positioned ^ ^ ^.2 run tp @s ^ ^ ^ ~ ~
+execute at @s as @e[type=bat,tag=.batTemp,limit=1,sort=nearest] positioned ~ ~.5 ~ run tp @s ^ ^ ^ ~ ~
 
 # Effects
-effect give @s[predicate=v.pack:player/is_sneaking] levitation 1 255 true
+execute if predicate v.pack:player/is_sneaking run function v.pack:b.transf/bat.sneaking
+execute unless predicate v.pack:player/is_sneaking run scoreboard players reset @s batCancel
 effect clear @s[predicate=!v.pack:player/is_sneaking] levitation
 
 # Effects

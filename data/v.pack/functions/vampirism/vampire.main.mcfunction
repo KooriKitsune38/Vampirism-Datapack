@@ -16,9 +16,9 @@ execute if score .tempFallDist v.Values matches 30.. run function v.pack:vampiri
 
 #> BL 80+ (Bat Transformation)
 #> Trigger
-scoreboard players enable @s[scores={v.bloodL=80..}] EnableBat
-execute if entity @s[scores={EnableBat=1..},tag=!t.canTransform] run function v.pack:b.transf/bat_trigger_on
-execute if entity @s[scores={EnableBat=1..},tag=t.canTransform] run function v.pack:b.transf/bat_trigger_off
+scoreboard players enable @s[scores={v.bloodL=80..}] ToggleBat
+execute if entity @s[scores={ToggleBat=1..},tag=!t.canTransform] run function v.pack:b.transf/bat_trigger_on
+execute if entity @s[scores={ToggleBat=1..},tag=t.canTransform] run function v.pack:b.transf/bat_trigger_off
 
 execute if score @s v.bloodL matches 80.. if entity @s[tag=!t.Cancelled,tag=t.canTransform] run function v.pack:vampirism/buffs/bl_80
 execute if entity @s[nbt={OnGround:1b}] run tag @s remove t.Cancelled

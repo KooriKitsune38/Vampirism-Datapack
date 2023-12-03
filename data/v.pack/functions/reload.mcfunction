@@ -15,7 +15,8 @@ scoreboard objectives add v.bloodL dummy
 scoreboard objectives add vampfalldist dummy
 scoreboard objectives add ritualhealth dummy
 scoreboard objectives add vampiresUUIDs dummy
-scoreboard objectives add EnableBat trigger
+scoreboard objectives add batCancel dummy
+scoreboard objectives add ToggleBat trigger
 #scoreboard objectives add vampflyingspeed minecraft.custom:minecraft.fly_one_cm
 #scoreboard objectives add daytimeerror dummy
 #scoreboard objectives add overworlderror dummy

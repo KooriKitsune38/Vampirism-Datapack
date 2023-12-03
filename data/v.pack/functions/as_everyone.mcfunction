@@ -6,10 +6,15 @@
 scoreboard players add @s[scores={vampirismtimer=1..}] vampirismtimer 1
 #> Spoopy Timer
 scoreboard players add @s[scores={spoopytimer=1..}] spoopytimer 1
+#> Bat Cancel
+scoreboard players remove @s[scores={batCancel=0..}] batCancel 1
 
 ## Resets
 #> Spoopy Timer
 scoreboard players reset @s[scores={spoopytimer=72000..}] spoopytimer
+
+# Cancel Bat
+execute if score @s batCancel matches ..0 run function v.pack:b.transf/bat_stop
 
 # Spoopy Sunds
 execute if score @s spoopytimer matches 1.. run function v.pack:sounds/spoopy.sounds
