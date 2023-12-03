@@ -44,7 +44,7 @@ scoreboard objectives add EnableBat trigger
 scoreboard players set .batEnabled v.Values 1
 scoreboard players set .1 v.Values 1
 scoreboard players set .7 v.Values 7
-scoreboard players set .batVersion v.Values 0
+execute unless score .batVersion v.Values matches -2147483648..2147483647 run scoreboard players set .batVersion v.Values 0
 
 #scoreboard players set #MinuteInSeconds qwuthalcalculate 60
 #scoreboard players set #SecondInTick qwuthalcalculate 20

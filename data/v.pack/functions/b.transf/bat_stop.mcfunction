@@ -10,8 +10,11 @@ execute if score .gamemode v.Values matches 0 run gamemode survival @s
 execute if score .gamemode v.Values matches 1 run gamemode creative @s
 execute if score .gamemode v.Values matches 2 run gamemode adventure @s
 
-# Give Resistance
+# Effects
 effect give @s resistance 1 255 true
+effect clear @s levitation
+effect clear @s slow_falling
+effect clear @s invisibility
 
 # Playsound
 playsound particle.soul_escape player @a ~ ~ ~ 2 1

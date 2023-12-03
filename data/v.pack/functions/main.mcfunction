@@ -7,7 +7,7 @@ execute as @e[type=marker] at @s run function v.pack:as_marker
 execute as @e[type=villager,tag=v.Anchor] at @s run function v.pack:as_anchor
 
 #> Bat
-execute if score .batEnabled v.Values matches 1 as @e[type=bat,tag=t.bat] at @s run function v.pack:b.transf/as_bat
+execute as @e[type=bat,tag=t.bat] at @s run function v.pack:b.transf/as_bat
 
 #> Iron Golem attack nearby vampires/bats
 execute as @e[type=iron_golem] at @s run data modify entity @s AngryAt set from entity @e[type=#v.pack:angery.golem,predicate=v.pack:player/angery.golem,limit=1,sort=nearest,distance=..10] UUID

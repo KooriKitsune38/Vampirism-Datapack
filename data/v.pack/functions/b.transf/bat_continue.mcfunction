@@ -1,26 +1,19 @@
 #> v.pack:b.transf/bat_continue
+
 # Increase bloodtimer
 scoreboard players add @s[tag=t.transformed] bloodtimer 4
 
 # Bat modes
-#> Gap
-execute if predicate v.pack:world/bat.gap run function v.pack:b.transf/bat.gap
-execute if predicate v.pack:world/bat.gap if score .batVersion v.Values matches 0 at @s as @e[type=bat,tag=.batTemp,limit=1,sort=nearest] positioned ~ ~.95 ~ rotated ~90 ~ run tp @s ^ ^ ^ ~-90 ~
-#> 0 (Old bat spectator)
-execute unless predicate v.pack:world/bat.gap if score .batVersion v.Values matches 0 at @s as @e[type=bat,tag=.batTemp,limit=1,sort=nearest] positioned ~ ~.95 ~ rotated ~90 ~ run tp @s ^.2 ^ ^ ~-90 ~
+#> Old Bat
+execute if score .batVersion v.Values matches 0 run function v.pack:b.transf/old_bat
+
+#> New Bat
+execute if score .batVersion v.Values matches 1 run function v.pack:b.transf/bat_control
 
 # Stop Conditions
-#> Air
-execute unless predicate v.pack:world/bat.gap unless block ~ ~ ~ #v.pack:air run function v.pack:b.transf/bat_stop
-execute unless predicate v.pack:world/bat.gap at @s unless block ~ ~.95 ~ #v.pack:air at @e[type=bat,tag=.batTemp,limit=1,sort=nearest] run function v.pack:b.transf/bat_stop
-
-
-#> If Entity
-tag @s add .temp
-execute if entity @e[type=!#v.pack:dont_target,tag=!.temp,tag=!.batTemp,distance=..0001] run function v.pack:b.transf/bat_stop
-tag @s remove .temp
-#> If bat takes damage
+#> If bat or player takes damage
 execute unless entity @e[type=bat,tag=.batTemp,limit=1,sort=nearest,nbt={HurtTime:0s}] run function v.pack:b.transf/bat_stop
+execute unless entity @s[nbt={HurtTime:0s}] run function v.pack:b.transf/bat_stop
 
 # Night Vision
 execute if predicate v.pack:world/bat.vision run effect give @s night_vision 11 0 true
