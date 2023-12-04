@@ -1,4 +1,5 @@
 {
+  "parent":"v.pack:consumed/consumables",
   "criteria": {
     "ate_human_eyes": {
       "trigger": "minecraft:consume_item",
@@ -8,14 +9,12 @@
           "nbt": "{Tags:[Vampire]}"
         },
         "item": {
-          "items": [
-            "minecraft:porkchop"
-          ]
+          "tag":"v.pack:meat_2bl"
         }
       }
     }
   },
   "rewards": {
-    "function": "v.pack:vampirism/pork_beef_blood"
+    "function": "v.pack:vampirism/gain_2bl"
   }
 }

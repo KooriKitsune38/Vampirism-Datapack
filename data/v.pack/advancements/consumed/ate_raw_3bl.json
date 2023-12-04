@@ -1,4 +1,5 @@
 {
+  "parent":"v.pack:consumed/consumables",
   "criteria": {
     "ate_human_eyes": {
       "trigger": "minecraft:consume_item",
@@ -8,14 +9,12 @@
           "nbt": "{Tags:[Vampire]}"
         },
         "item": {
-          "items": [
-            "minecraft:mutton"
-          ]
+          "tag":"v.pack:meat_3bl"
         }
       }
     }
   },
   "rewards": {
-    "function": "v.pack:vampirism/mutton_blood"
+    "function": "v.pack:vampirism/gain_3bl"
   }
 }

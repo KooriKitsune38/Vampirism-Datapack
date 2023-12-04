@@ -1,4 +1,5 @@
 {
+  "parent":"v.pack:consumed/consumables",
   "criteria": {
     "ate_human_eyes": {
       "trigger": "minecraft:consume_item",
