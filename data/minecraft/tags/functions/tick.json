@@ -1,6 +1,8 @@
 {
 	"values": [
-	"v.pack:main",
+	"v.pack:main1",
+	"v.pack:main2",
+	"v.pack:main3",
 	"qwuthal:main"
 	]
 }
