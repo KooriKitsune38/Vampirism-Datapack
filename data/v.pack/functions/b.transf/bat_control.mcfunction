@@ -15,9 +15,13 @@ execute unless predicate v.pack:player/is_sneaking run scoreboard players reset 
 effect clear @s[predicate=!v.pack:player/is_sneaking] levitation
 
 # Effects
+#> Invisibility
 effect give @s invisibility 1 0 true
-effect give @s[x_rotation=0..85] slow_falling 1 0 true
+#> SlowFalling
+effect give @s[x_rotation=-45..85] slow_falling 1 0 true
 effect clear @s[x_rotation=86..90] slow_falling
-effect give @s[x_rotation=-30..-1] levitation 1 1 true
-effect give @s[x_rotation=-90..-31] levitation 1 4 true
+#> Levitation
+effect give @s[x_rotation=-30..-5] levitation 1 1 true
+effect give @s[x_rotation=-55..-31] levitation 1 4 true
+effect give @s[x_rotation=-90..-56] levitation 1 7 true
 effect clear @s[predicate=!v.pack:player/is_sneaking,x_rotation=0..90] levitation
