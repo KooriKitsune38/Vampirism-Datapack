@@ -23,4 +23,4 @@ execute if entity @s[scores={custbrewtime=0..}] at @s store result block ~ ~ ~ B
 execute unless block ~ ~ ~ brewing_stand run kill @s
 
 ## Particles ##
-execute if entity @s[predicate=v.pack:chance_30] if block ~ ~ ~ brewing_stand run particle minecraft:bubble_pop ~ ~0.6 ~ 0.2 0.2 0.2 0 1 force
+execute if entity @s[predicate=v.pack:chance_30] run particle minecraft:bubble_pop ~ ~ ~ 0.2 0.2 0.2 0 1 force

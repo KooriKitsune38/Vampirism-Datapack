@@ -29,7 +29,7 @@ execute if score @s vampirismtimer matches 0.. run function v.pack:vampirism/tra
 execute if entity @s[predicate=v.pack:temple/wand_on_hand,predicate=v.pack:player/is_sneaking] if block ~ ~-0.25 ~ minecraft:respawn_anchor[charges=0] run function v.pack:temple/temple.req
 
 # Brewing Stand
-execute if entity @s[predicate=v.pack:temple/wand_on_hand] if block ~ ~ ~ brewing_stand unless entity @e[type=marker,tag=v.brewStand,distance=..1] run function v.pack:brews/act.extractor
+execute if entity @s[predicate=v.pack:temple/wand_on_hand] align xyz positioned ~.5 ~.5 ~.5 if block ~ ~ ~ brewing_stand unless entity @e[type=marker,tag=v.brewStand,distance=..1] run function v.pack:brews/act.extractor
 
 # reset t.errorDisp
 execute unless predicate v.pack:player/is_sneaking run tag @s remove t.errorDisp
