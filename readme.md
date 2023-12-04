@@ -61,6 +61,10 @@ Vampires emits particles at night that only other vampires can spot, so you can 
 
 P.S. _Be careful around Iron Golems, they don't really like the scent vampires emit!_
 
+#### Config
+_You can toggle Iron Damage (Default = 1):_
+`/scoreboard players set .ironDamage v.Values 0/1` (Off = 0, On = 1)
+
 ### Bat Transformations!
 Become a bat as a vampire!
 
