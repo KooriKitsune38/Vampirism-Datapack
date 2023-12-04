@@ -50,6 +50,7 @@ execute unless score .ironDamage v.Values matches -2147483648..2147483647 run sc
 execute unless score .batEnabled v.Values matches -2147483648..2147483647 run scoreboard players set .batEnabled v.Values 1
 execute unless score .batAlwaysOn v.Values matches -2147483648..2147483647 run scoreboard players set .batAlwaysOn v.Values 0
 execute unless score .batVersion v.Values matches -2147483648..2147483647 run scoreboard players set .batVersion v.Values 0
+execute unless score .batUnderSun v.Values matches -2147483648..2147483647 run scoreboard players set .batUnderSun v.Values 1
 
 #scoreboard players set #MinuteInSeconds qwuthalcalculate 60
 #scoreboard players set #SecondInTick qwuthalcalculate 20

@@ -1,1 +1,7 @@
-execute if score .batEnabled v.Values matches 1 unless predicate v.pack:player/has_armour if score .tempFallDist v.Values matches 15.. if entity @s[predicate=v.pack:player/is_sneaking,tag=!t.transformed] positioned ~ ~1 ~ run function v.pack:b.transf/bat_start
+#> v.pack:vampirism/buffs/bl_80
+
+# Sun Exposure Option
+#> Off (No Sun Transformation)
+execute if score .batUnderSun v.Values matches 0 unless predicate v.pack:player/under_sunlight run function v.pack:b.transf/bat_conditions
+#> On (Sun Allowed)
+execute if score .batUnderSun v.Values matches 1 run function v.pack:b.transf/bat_conditions

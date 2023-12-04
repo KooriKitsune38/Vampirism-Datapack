@@ -41,7 +41,7 @@ execute if score .ironDamage v.Values matches 1 run function v.pack:vampirism/ir
 
 #> If under_sunlight, has no fire resistance
 execute unless entity @s[tag=t.transformed] if predicate v.pack:player/sunlight_exposure run function v.pack:vampirism/sunlight/sun_exposed
-execute if predicate v.pack:world/in_overworld if predicate v.pack:player/under_sunlight run effect give @s weakness 1 0 true
+execute if predicate v.pack:world/in_overworld if predicate v.pack:player/under_sunlight unless entity @s[tag=t.transformed] run effect give @s weakness 1 0 true
 
 # Player's Level
 function v.pack:vampirism/bl/player_level
