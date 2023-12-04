@@ -18,8 +18,8 @@ effect clear @s[predicate=!v.pack:player/is_sneaking] levitation
 #> Invisibility
 effect give @s invisibility 1 0 true
 #> SlowFalling
-effect give @s[x_rotation=-45..85] slow_falling 1 0 true
-effect clear @s[x_rotation=86..90] slow_falling
+effect give @s[x_rotation=-45..88] slow_falling 1 0 true
+effect clear @s[x_rotation=89..90] slow_falling
 #> Levitation
 effect give @s[x_rotation=-30..-5] levitation 1 1 true
 effect give @s[x_rotation=-55..-31] levitation 1 4 true
