@@ -16,6 +16,8 @@ execute unless entity @e[type=bat,tag=.batTemp,limit=1,sort=nearest,nbt={HurtTim
 execute unless entity @s[nbt={HurtTime:0s}] run function v.pack:b.transf/bat_stop
 #> If Under Daylight (Option .batUnderSun Off)
 execute if score .batUnderSun v.Values matches 0 if predicate v.pack:player/under_sunlight run function v.pack:b.transf/bat_stop
+#> If has Armour
+execute if predicate v.pack:player/has_armour run function v.pack:b.transf/bat_stop
 
 # Night Vision
 execute if predicate v.pack:world/bat.vision run effect give @s night_vision 11 0 true

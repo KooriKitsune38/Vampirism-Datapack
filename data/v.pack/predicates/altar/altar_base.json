@@ -27,8 +27,8 @@
   },
   {
     "condition": "minecraft:location_check",
-    "offsetZ": 1,
     "offsetY": -1,
+    "offsetZ": 1,
     "predicate": {
       "block": {
         "tag": "v.pack:quartz.slab",
@@ -40,8 +40,8 @@
   },
   {
     "condition": "minecraft:location_check",
+    "offsetY": -1,
     "offsetZ": -1,
-    "offsetY": -1,
     "predicate": {
       "block": {
         "tag": "v.pack:quartz.slab",
@@ -53,37 +53,9 @@
   },
   {
     "condition": "minecraft:location_check",
-    "offsetZ": 1,
     "offsetX": 1,
     "offsetY": -1,
-    "predicate": {
-      "block": {
-        "tag": "v.pack:quartz.slab",
-        "state": {
-          "type": "bottom"
-        }
-      }
-    }
-  },
-  {
-    "condition": "minecraft:location_check",
-    "offsetZ": -1,
-    "offsetX": -1,
-    "offsetY": -1,
-    "predicate": {
-      "block": {
-        "tag": "v.pack:quartz.slab",
-        "state": {
-          "type": "bottom"
-        }
-      }
-    }
-  },
-  {
-    "condition": "minecraft:location_check",
     "offsetZ": 1,
-    "offsetX": -1,
-    "offsetY": -1,
     "predicate": {
       "block": {
         "tag": "v.pack:quartz.slab",
@@ -95,9 +67,37 @@
   },
   {
     "condition": "minecraft:location_check",
+    "offsetX": -1,
+    "offsetY": -1,
     "offsetZ": -1,
+    "predicate": {
+      "block": {
+        "tag": "v.pack:quartz.slab",
+        "state": {
+          "type": "bottom"
+        }
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": -1,
+    "offsetY": -1,
+    "offsetZ": 1,
+    "predicate": {
+      "block": {
+        "tag": "v.pack:quartz.slab",
+        "state": {
+          "type": "bottom"
+        }
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
     "offsetX": 1,
     "offsetY": -1,
+    "offsetZ": -1,
     "predicate": {
       "block": {
         "tag": "v.pack:quartz.slab",
@@ -187,7 +187,7 @@
     "predicate": {
       "block": {
         "tag": "v.pack:quartz.slab",
-        "state": {
+        "states": {
           "type": "bottom",
           "waterlogged": true
         }
