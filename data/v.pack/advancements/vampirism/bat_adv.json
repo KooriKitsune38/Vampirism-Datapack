@@ -1,0 +1,21 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:elytra",
+        "nbt": "{Enchantments:[{}]}"
+      },
+      "title": "Bat Wannabe",
+      "description": "Transform into a bat (Hold \"Sneak\" Mid-air)",
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "v.pack:vampirism/vampire_adv",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  

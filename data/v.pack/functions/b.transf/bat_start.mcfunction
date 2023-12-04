@@ -3,6 +3,9 @@
 #> Tp a few blocks up
 tp @s ~ ~ ~
 
+# Give Advancement
+advancement grant @s only v.pack:vampirism/bat_adv
+
 # Mount Delay
 execute if score .batVersion v.Values matches 1 run scoreboard players set @s mountBatDelay 20
 
